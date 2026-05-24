@@ -42,7 +42,6 @@ function renderDetail(data, item) {
   meta.replaceChildren();
   meta.append(createElement("span", "type-label", getTypeLabel(data, item.type)));
   meta.append(createElement("span", "", formatDate(item.date)));
-  if (item.readingTime) meta.append(createElement("span", "", item.readingTime));
 
   setText("[data-detail-title]", item.title);
   setText("[data-detail-summary]", item.summary || item.excerpt);

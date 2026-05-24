@@ -72,7 +72,6 @@ Dentro de `"body"` puedes combinar estos bloques:
   "summary": "Resumen breve que aparece en la tarjeta.",
   "excerpt": "Frase breve opcional para destacar el argumento.",
   "date": "2026-05-23",
-  "readingTime": "6 min",
   "draft": true,
   "author": {
     "name": "Nombre Autor",
@@ -121,7 +120,6 @@ Para columna académica, usa:
   "title": "Título de la noticia",
   "summary": "Resumen breve de la noticia.",
   "date": "2026-05-23",
-  "readingTime": "3 min",
   "draft": true,
   "tags": [
     "CEAPS",
@@ -151,7 +149,6 @@ Para columna académica, usa:
   "title": "Título del evento",
   "summary": "Resumen breve del evento.",
   "date": "2026-05-23",
-  "readingTime": "3 min",
   "draft": true,
   "event": {
     "date": "2026-06-05",
@@ -199,7 +196,6 @@ Para columna académica, usa:
   "summary": "Resumen breve de la convocatoria.",
   "date": "2026-05-23",
   "deadline": "2026-06-10",
-  "readingTime": "4 min",
   "draft": true,
   "author": {
     "name": "Equipo CEAPS",
@@ -246,7 +242,6 @@ Para columna académica, usa:
   "title": "Título del paper o documento",
   "summary": "Resumen breve del paper.",
   "date": "2026-05-23",
-  "readingTime": "12 min",
   "draft": true,
   "author": {
     "name": "Apellido, N.; Apellido, N.",
@@ -290,7 +285,6 @@ Para columna académica, usa:
   "title": "Título del boletín",
   "summary": "Resumen breve de la edición.",
   "date": "2026-05-23",
-  "readingTime": "10 min",
   "draft": true,
   "tags": [
     "Boletín",

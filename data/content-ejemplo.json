@@ -196,7 +196,6 @@
       "summary": "Una lectura sobre cómo los debates económicos chilenos dialogan con la nueva ola electoral de la región.",
       "excerpt": "El malestar con el desempeño económico ya no se expresa solo como crítica al crecimiento, sino como disputa por la arquitectura del Estado.",
       "date": "2025-02-12",
-      "readingTime": "7 min",
       "featured": true,
       "author": {
         "name": "María J. López",
@@ -246,7 +245,6 @@
       "title": "Instituciones débiles y polarización: evidencia comparada desde el Cono Sur",
       "summary": "Revisión comparada sobre confianza institucional, fragmentación partidaria y polarización afectiva en cuatro países.",
       "date": "2025-02-10",
-      "readingTime": "14 min",
       "featured": true,
       "author": {
         "name": "Prof. Andrés Castillo",
@@ -292,7 +290,6 @@
       "title": "Política monetaria en tiempos de inflación: desafíos para el Banco Central",
       "summary": "Conversatorio con académicos y estudiantes sobre inflación, credibilidad y transmisión de tasas.",
       "date": "2025-02-08",
-      "readingTime": "3 min",
       "featured": true,
       "event": {
         "date": "2025-02-14",
@@ -340,7 +337,6 @@
       "summary": "Convocatoria para estudiantes interesados en análisis experimental, revisión bibliográfica y trabajo con datos.",
       "date": "2025-02-06",
       "deadline": "2025-02-28",
-      "readingTime": "4 min",
       "featured": true,
       "author": {
         "name": "Prof. R. Morales",
@@ -387,7 +383,6 @@
       "title": "Economía política del presupuesto 2025: ganadores y perdedores en la discusión fiscal",
       "summary": "Este número analiza las principales implicancias del presupuesto aprobado, con columnas sobre gasto social, regiones y deuda pública.",
       "date": "2025-02-03",
-      "readingTime": "12 min",
       "tags": [
         "Presupuesto",
         "Gasto público",
@@ -423,7 +418,6 @@
       "title": "CEAPS abre convocatoria para integrar su comité editorial 2025",
       "summary": "El club recibirá postulaciones de estudiantes interesados en edición, revisión y planificación de contenidos.",
       "date": "2025-01-31",
-      "readingTime": "3 min",
       "tags": [
         "Convocatoria",
         "Editorial",
@@ -452,7 +446,6 @@
       "summary": "Una columna sobre los límites de prometer simultáneamente estabilidad de precios, empleo robusto y crecimiento acelerado.",
       "excerpt": "Las metas del gobierno colisionan con una realidad macroeconómica que no perdona errores de diagnóstico.",
       "date": "2025-01-29",
-      "readingTime": "6 min",
       "author": {
         "name": "Felipe Vargas",
         "role": "Est. Ingeniería Comercial, 4° año",
@@ -486,7 +479,6 @@
       "title": "Balance de año en política exterior: Chile y el nuevo orden multilateral",
       "summary": "Revisión de los hitos diplomáticos del año y los desafíos que enfrenta la política exterior chilena.",
       "date": "2025-01-20",
-      "readingTime": "9 min",
       "tags": [
         "Política exterior",
         "Multilateralismo",
@@ -511,7 +503,6 @@
       "summary": "Análisis sobre municipios, atribuciones y restricciones fiscales a tres décadas de reformas descentralizadoras.",
       "excerpt": "Treinta años después de la regionalización, los municipios siguen sin recursos para ejecutar políticas propias.",
       "date": "2025-01-18",
-      "readingTime": "8 min",
       "author": {
         "name": "Prof. Sebastián Cañas",
         "role": "Economía Regional, FEN-UChile",
@@ -544,7 +535,6 @@
       "title": "Taller de escritura de opinión: del argumento a la columna",
       "summary": "Sesión práctica para preparar textos breves, estructurar tesis y trabajar edición entre pares.",
       "date": "2025-01-15",
-      "readingTime": "3 min",
       "event": {
         "date": "2025-01-24",
         "time": "16:00",
@@ -573,7 +563,6 @@
       "title": "Instituciones extractivas y desigualdad regional: evidencia para Chile 1990-2020",
       "summary": "El estudio examina la relación entre calidad institucional y disparidades regionales usando datos administrativos.",
       "date": "2025-01-12",
-      "readingTime": "16 min",
       "author": {
         "name": "Castillo, A.; Fuentes, M.; Lagos, R.",
         "role": "Documento de trabajo",
@@ -602,7 +591,6 @@
       "title": "CEAPS colaborará con observatorio electoral universitario durante el primer semestre",
       "summary": "La alianza permitirá publicar minutas de seguimiento, datos electorales y explicadores metodológicos.",
       "date": "2025-01-10",
-      "readingTime": "4 min",
       "tags": [
         "Elecciones",
         "Datos",
@@ -627,7 +615,6 @@
       "title": "Reforma de pensiones: cronología de un debate que no termina",
       "summary": "Análisis técnico y político del proyecto de reforma previsional y sus perspectivas de avance.",
       "date": "2025-01-06",
-      "readingTime": "11 min",
       "tags": [
         "Pensiones",
         "Reforma",
@@ -652,7 +639,6 @@
       "summary": "Una revisión crítica de los triunfos recientes de derechas latinoamericanas y sus diferencias programáticas.",
       "excerpt": "Las victorias de Milei y Noboa no responden a una misma lógica ideológica: confundirlas es un error analítico.",
       "date": "2024-12-19",
-      "readingTime": "7 min",
       "author": {
         "name": "Martina Rojas",
         "role": "Est. Ciencia Política, 3° año",
@@ -682,7 +668,6 @@
       "title": "Mercado laboral post-pandemia: brechas que persisten y nuevas tendencias",
       "summary": "Datos y análisis sobre empleo, informalidad y desigualdad de género en el mercado del trabajo.",
       "date": "2024-12-09",
-      "readingTime": "10 min",
       "tags": [
         "Trabajo",
         "Informalidad",
@@ -706,7 +691,6 @@
       "title": "Efectos del salario mínimo sobre el empleo informal: heterogeneidades por sector",
       "summary": "Mediante discontinuidades de regresión, el estudio identifica impactos diferenciados sobre informalidad.",
       "date": "2024-11-30",
-      "readingTime": "15 min",
       "author": {
         "name": "Pérez, A.; Soto, C.",
         "role": "FEN-UChile",
@@ -736,7 +720,6 @@
       "title": "Constitución y economía: qué modelo consagra el nuevo texto",
       "summary": "Análisis de los capítulos económicos del proceso constitucional y su impacto potencial en inversión.",
       "date": "2024-11-25",
-      "readingTime": "13 min",
       "tags": [
         "Constitución",
         "Inversión",
