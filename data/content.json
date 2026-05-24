@@ -139,7 +139,7 @@
       {
         "name": "Martín Castillo Jiménez",
         "role": "Presidente",
-        "image": "assets/img/equipo/presidente.jpg",
+        "image": "assets/img/equipo/presidente.jpeg",
         "text": "Encargado de coordinar la dirección general del club, impulsar la agenda editorial y promover espacios de conversación sobre economía, actualidad política y sociedad.\n\nEstudiante de Ingeniería Comercial y del Magíster en Economía y Políticas Públicas de la Universidad Adolfo Ibáñez. Sus principales intereses son la historia de Asia, especialmente de China, y cómo esta ha transformado el panorama internacional.",
         "email": "martincastillo@alumnos.uai.cl",
         "link": ""
@@ -164,9 +164,7 @@
         "name": "Ismael Sóto Cárdenas",
         "role": "Miembro del Departamento de Investigación",
         "image": "",
-        "text": "Encargado de apoyar la vinculación de la investigación académica con los estudiantes.
-
-Estudiante del Magíster en Economía y Políticas Públicas de la Universidad Adolfo Ibáñez.\n\nEstudiante del Magíster en Economía y Políticas Públicas de la Universidad Adolfo Ibáñez. Su principal interés son economía de la educación",
+        "text": "Encargado de apoyar la vinculación de la investigación académica con los estudiantes.\n\nEstudiante del Magíster en Economía y Políticas Públicas de la Universidad Adolfo Ibáñez. Su principal interés es la economía de la educación.",
         "link": ""
       }
     ]
