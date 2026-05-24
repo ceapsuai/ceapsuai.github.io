@@ -10,7 +10,7 @@ import {
   renderHeader,
   renderTags,
   setupMobileMenu,
-} from "./data.js";
+} from "./data.js?v=20260523-clean";
 
 const state = {
   columnFilter: "todas",
@@ -62,19 +62,25 @@ function renderHero(data) {
 
 function renderFeaturedStrip(data) {
   const target = document.querySelector("[data-featured-strip]");
+  const section = target.closest(".quick-strip");
   target.replaceChildren();
 
-  data.hero.featuredIds
+  const featuredItems = data.hero.featuredIds
     .map((id) => data.items.find((item) => item.id === id))
-    .filter(Boolean)
-    .forEach((item) => {
-      const link = createElement("a", "quick-link");
-      link.href = getItemUrl(item);
-      link.append(createElement("span", "", getTypeLabel(data, item.type)));
-      link.append(createElement("strong", "", item.title));
-      link.append(createElement("small", "", item.author?.name || item.event?.place || formatDate(item.date)));
-      target.append(link);
-    });
+    .filter((item) => item && !item.draft);
+
+  if (section) {
+    section.hidden = featuredItems.length === 0;
+  }
+
+  featuredItems.forEach((item) => {
+    const link = createElement("a", "quick-link");
+    link.href = getItemUrl(item);
+    link.append(createElement("span", "", getTypeLabel(data, item.type)));
+    link.append(createElement("strong", "", item.title));
+    link.append(createElement("small", "", item.author?.name || item.event?.place || formatDate(item.date)));
+    target.append(link);
+  });
 }
 
 function renderLatest(data) {
@@ -82,7 +88,14 @@ function renderLatest(data) {
 
   const target = document.querySelector("[data-latest-grid]");
   target.replaceChildren();
-  getItems(data).slice(0, 6).forEach((item) => {
+  const items = getItems(data).slice(0, 6);
+
+  if (items.length === 0) {
+    target.append(createEmptyState("Publicaciones próximamente", "Aquí aparecerán las nuevas columnas, noticias, eventos y convocatorias de CEAPS."));
+    return;
+  }
+
+  items.forEach((item) => {
     target.append(createCard(item, data));
   });
 }
@@ -97,6 +110,12 @@ function renderNewsletter(data) {
   const listTarget = document.querySelector("[data-newsletter-list]");
   featureTarget.replaceChildren();
   listTarget.replaceChildren();
+
+  if (!featured) {
+    featureTarget.append(createEmptyState("Boletín próximamente", "Las primeras ediciones del boletín CEAPS aparecerán en esta sección."));
+    listTarget.append(createEmptyState("Archivo en construcción", "Cuando existan más ediciones, quedarán ordenadas aquí."));
+    return;
+  }
 
   if (featured) {
     const feature = createElement("a", "newsletter-feature");
@@ -140,10 +159,16 @@ function renderColumnGrid(data) {
   const target = document.querySelector("[data-columns-grid]");
   target.replaceChildren();
 
-  getItems(data, { type: "opinion" })
+  const items = getItems(data, { type: "opinion" })
     .filter((item) => state.columnFilter === "todas" || item.category === state.columnFilter)
-    .slice(0, 8)
-    .forEach((item) => target.append(createCard(item, data, { variant: "opinion-card" })));
+    .slice(0, 8);
+
+  if (items.length === 0) {
+    target.append(createEmptyState("Columnas próximamente", "Las columnas estudiantiles y académicas se publicarán aquí."));
+    return;
+  }
+
+  items.forEach((item) => target.append(createCard(item, data, { variant: "opinion-card" })));
 }
 
 function renderNewsEvents(data) {
@@ -156,9 +181,21 @@ function renderNewsEvents(data) {
   newsTarget.replaceChildren();
   eventsTarget.replaceChildren();
 
-  getItems(data, { type: "news" }).slice(0, 4).forEach((item) => newsTarget.append(createListItem(item, data)));
+  const newsItems = getItems(data, { type: "news" }).slice(0, 4);
+  const eventItems = getItems(data, { type: "event" }).slice(0, 4);
 
-  getItems(data, { type: "event" }).slice(0, 4).forEach((item) => {
+  if (newsItems.length === 0) {
+    newsTarget.append(createEmptyState("Noticias próximamente", "Los anuncios del club aparecerán aquí."));
+  } else {
+    newsItems.forEach((item) => newsTarget.append(createListItem(item, data)));
+  }
+
+  if (eventItems.length === 0) {
+    eventsTarget.append(createEmptyState("Agenda próximamente", "Las próximas actividades de CEAPS aparecerán aquí."));
+    return;
+  }
+
+  eventItems.forEach((item) => {
     const eventItem = createListItem(item, data);
     if (item.event?.date) {
       eventItem.append(createElement("strong", "event-date", `${formatDate(item.event.date, { weekday: "short", day: "numeric", month: "short" })} · ${item.event.time}`));
@@ -172,7 +209,14 @@ function renderPapers(data) {
 
   const target = document.querySelector("[data-papers-grid]");
   target.replaceChildren();
-  getItems(data, { type: "paper" }).slice(0, 6).forEach((item) => {
+  const items = getItems(data, { type: "paper" }).slice(0, 6);
+
+  if (items.length === 0) {
+    target.append(createEmptyState("Papers próximamente", "Los documentos de trabajo y selección de papers aparecerán aquí."));
+    return;
+  }
+
+  items.forEach((item) => {
     const paper = createElement("a", "paper-card");
     paper.href = getItemUrl(item);
     paper.append(createElement("p", "eyebrow", item.category));
@@ -188,7 +232,14 @@ function renderOpportunities(data) {
 
   const target = document.querySelector("[data-opportunities-grid]");
   target.replaceChildren();
-  getItems(data, { type: "opportunity" }).slice(0, 4).forEach((item) => target.append(createCard(item, data)));
+  const items = getItems(data, { type: "opportunity" }).slice(0, 4);
+
+  if (items.length === 0) {
+    target.append(createEmptyState("Oportunidades próximamente", "Las convocatorias, ayudantías y llamados a participar se publicarán en esta sección."));
+    return;
+  }
+
+  items.forEach((item) => target.append(createCard(item, data)));
 }
 
 function renderAbout(data) {
@@ -260,6 +311,13 @@ function setSectionText(key, section) {
   setText(`[data-${toKebab(key)}-kicker]`, section.kicker);
   setText(`[data-${toKebab(key)}-title]`, section.title);
   setText(`[data-${toKebab(key)}-description]`, section.description);
+}
+
+function createEmptyState(title, description) {
+  const state = createElement("div", "empty-state");
+  state.append(createElement("h3", "", title));
+  state.append(createElement("p", "", description));
+  return state;
 }
 
 function setText(selector, value) {

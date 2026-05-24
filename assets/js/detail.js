@@ -10,7 +10,7 @@ import {
   renderHeader,
   renderTags,
   setupMobileMenu,
-} from "./data.js";
+} from "./data.js?v=20260523-clean";
 
 init();
 

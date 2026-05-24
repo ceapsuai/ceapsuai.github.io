@@ -502,6 +502,40 @@ input {
   border-color: rgba(32, 30, 30, 0.34);
 }
 
+.empty-state {
+  background: rgba(255, 250, 240, 0.62);
+  border: 1px solid var(--line-dark);
+  border-radius: 8px;
+  grid-column: 1 / -1;
+  min-height: 180px;
+  padding: 1.25rem;
+}
+
+.empty-state h3 {
+  font-family: var(--serif);
+  font-size: 1.35rem;
+  line-height: 1.18;
+  margin: 0;
+}
+
+.empty-state p {
+  color: rgba(32, 30, 30, 0.66);
+  margin: 0.65rem 0 0;
+}
+
+.section-ink .empty-state {
+  background: rgba(255, 250, 240, 0.06);
+  border-color: var(--line);
+}
+
+.section-ink .empty-state h3 {
+  color: var(--white);
+}
+
+.section-ink .empty-state p {
+  color: rgba(255, 250, 240, 0.72);
+}
+
 .card-meta,
 .detail-meta {
   align-items: center;

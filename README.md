@@ -18,6 +18,8 @@ Sitio estático para el Club de Economía, Actualidad Política y Sociedad.
 
 Edita `data/content.json`. Cada publicación debe tener un `id` único, `type`, `title`, `summary`, `date`, `tags` y un arreglo `body`.
 
+La versión activa de `data/content.json` está limpia: no contiene publicaciones ficticias visibles. El contenido de ejemplo quedó respaldado en `data/content-ejemplo.json`.
+
 Para crear contenido real sin romper el formato, copia una plantilla desde `docs/plantillas-contenido.md` y pégala dentro del arreglo `"items"` en `data/content.json`.
 
 Puedes preparar contenido sin publicarlo usando:
