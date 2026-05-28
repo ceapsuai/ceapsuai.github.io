@@ -1,5 +1,6 @@
 import {
   createElement,
+  getItems,
   loadSiteData,
   renderHeader,
   setupMobileMenu,
@@ -30,10 +31,10 @@ function renderTeamPage(data) {
 
   const grid = document.querySelector("[data-team-grid]");
   grid.replaceChildren();
-  page.members.forEach((member) => grid.append(createMemberCard(member)));
+  page.members.forEach((member) => grid.append(createMemberCard(member, data)));
 }
 
-function createMemberCard(member) {
+function createMemberCard(member, data) {
   const card = createElement("article", "team-card");
   const media = createElement("div", "team-photo");
 
@@ -52,20 +53,50 @@ function createMemberCard(member) {
   body.append(createElement("p", "team-role", member.role));
   body.append(createElement("p", "team-text", member.text));
 
+  const actions = createElement("div", "team-actions");
+
   if (member.email) {
     const email = createElement("a", "team-link", "Contacto");
     email.href = `mailto:${member.email}`;
-    body.append(email);
+    actions.append(email);
+  }
+
+  const authorId = member.authorId || slugify(member.name);
+  const hasOpinionColumns = getItems(data, { type: "opinion" }).some((item) => matchesMemberAuthor(item, member, authorId));
+
+  if (member.authorId || hasOpinionColumns) {
+    const columns = createElement("a", "team-link", "Columnas de opinión");
+    columns.href = `autor.html?autor=${encodeURIComponent(authorId)}`;
+    actions.append(columns);
   }
 
   if (member.link) {
     const link = createElement("a", "team-link", "Saber +");
     link.href = member.link;
-    body.append(link);
+    actions.append(link);
+  }
+
+  if (actions.children.length) {
+    body.append(actions);
   }
 
   card.append(media, body);
   return card;
+}
+
+function matchesMemberAuthor(item, member, authorId) {
+  if (!item.author) return false;
+  if (item.author.id && item.author.id === authorId) return true;
+  return item.author.name === member.name || slugify(item.author.name || "") === authorId;
+}
+
+function slugify(value) {
+  return value
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
 }
 
 function renderError(error) {

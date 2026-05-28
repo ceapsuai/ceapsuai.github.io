@@ -277,7 +277,8 @@ function renderHeroTitle(title) {
 
   node.setAttribute("aria-label", title);
   Array.from(title).forEach((letter) => {
-    const span = createElement("span", letter.toUpperCase() === "A" ? "brand-accent" : "", letter);
+    const isA = letter.toUpperCase() === "A";
+    const span = createElement("span", isA ? "brand-accent" : "", isA ? "Λ" : letter);
     node.append(span);
   });
 }

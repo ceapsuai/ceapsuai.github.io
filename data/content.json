@@ -139,6 +139,7 @@
       {
         "name": "Martín Castillo Jiménez",
         "role": "Presidente",
+        "authorId": "martin-castillo-jimenez",
         "image": "assets/img/equipo/presidente.jpeg",
         "text": "Encargado de coordinar la dirección general del club, impulsar la agenda editorial y promover espacios de conversación sobre economía, actualidad política y sociedad.\n\nEstudiante de Ingeniería Comercial y del Magíster en Economía y Políticas Públicas de la Universidad Adolfo Ibáñez. Sus principales intereses son la historia de Asia, especialmente de China, y cómo esta ha transformado el panorama internacional.",
         "email": "martincastillo@alumnos.uai.cl",
@@ -147,6 +148,7 @@
       {
         "name": "Maximiliano Osorio Requena",
         "role": "Vicepresidente y Director del Departamento de Vinculación con el Medio",
+        "authorId": "maximiliano-osorio-requena",
         "image": "assets/img/equipo/vicepresidente.PNG",
         "text": "Encargado de apoyar la coordinación estratégica del club, fortalecer la gestión interna y promover el uso de herramientas analíticas y computacionales para el estudio de la economía, la actualidad política y la sociedad.\n\nEstudiante del Magíster en Economía y Políticas Públicas de la Universidad Adolfo Ibáñez.",
         "email": "maxiosorio@alumnos.uai.cl",
@@ -192,6 +194,7 @@
       "excerpt": "La universidad comienza a perder su sentido más propio cuando deja de ser un espacio de reflexión, discusión y escucha activa.",
       "date": "2026-05-23",
       "author": {
+        "id": "martin-castillo-jimenez",
         "name": "Martín Castillo Jiménez",
         "role": "Presidente CEAPS",
         "initials": "MC"

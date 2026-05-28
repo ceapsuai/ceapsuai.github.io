@@ -124,6 +124,12 @@ input {
   width: 44px;
 }
 
+.brand-mark img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
 .brand-mark span,
 .brand-word span {
   color: var(--gold);
@@ -1026,12 +1032,17 @@ input {
   white-space: pre-line;
 }
 
+.team-actions {
+  display: grid;
+  gap: 0.55rem;
+  margin-top: auto;
+  padding-top: 1.5rem;
+}
+
 .team-link {
   color: #050505;
   font-size: 0.78rem;
   font-weight: 900;
-  margin-top: auto;
-  padding-top: 1.5rem;
   text-transform: uppercase;
 }
 
@@ -1043,6 +1054,10 @@ input {
   color: rgba(5, 5, 5, 0.56);
   font-size: 0.92rem;
   margin-top: 1.2rem;
+}
+
+.author-columns-band {
+  background: var(--paper);
 }
 
 @media (max-width: 980px) {

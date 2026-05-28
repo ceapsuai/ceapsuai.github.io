@@ -74,6 +74,7 @@ Dentro de `"body"` puedes combinar estos bloques:
   "date": "2026-05-23",
   "draft": true,
   "author": {
+    "id": "nombre-autor",
     "name": "Nombre Autor",
     "role": "Cargo, carrera o afiliación",
     "initials": "NA"
@@ -198,6 +199,7 @@ Para columna académica, usa:
   "deadline": "2026-06-10",
   "draft": true,
   "author": {
+    "id": "equipo-ceaps",
     "name": "Equipo CEAPS",
     "role": "Convocatoria",
     "initials": "CE"
@@ -244,6 +246,7 @@ Para columna académica, usa:
   "date": "2026-05-23",
   "draft": true,
   "author": {
+    "id": "apellido-n",
     "name": "Apellido, N.; Apellido, N.",
     "role": "Documento de trabajo",
     "initials": "AA"
@@ -315,11 +318,13 @@ Para columna académica, usa:
 ## Equipo Directivo
 
 Los miembros del equipo se editan en `teamPage.members`, no en `items`.
+Si un integrante publica columnas, usa el mismo identificador en `authorId` del integrante y en `author.id` de sus columnas. Así aparecerá automáticamente el enlace `Columnas de opinión` en su tarjeta.
 
 ```json
 {
   "name": "Nombre Apellido",
   "role": "Cargo CEAPS",
+  "authorId": "nombre-apellido",
   "image": "assets/img/equipo/foto.jpg",
   "text": "Primer párrafo.\n\nSegundo párrafo.",
   "email": "correo@alumnos.uai.cl",
