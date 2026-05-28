@@ -340,6 +340,11 @@ blockquote,
   font-size: 1.22rem;
   margin: 0 auto;
   max-width: 760px;
+  text-align: center;
+}
+
+.hero-copy .eyebrow {
+  text-align: center;
 }
 
 .hero-actions {
