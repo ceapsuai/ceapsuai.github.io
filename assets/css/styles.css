@@ -74,6 +74,28 @@ input {
   width: 100%;
 }
 
+p,
+li,
+dd,
+blockquote,
+.hero-lede,
+.detail-summary,
+.content-card p,
+.list-item p,
+.paper-card p,
+.newsletter-feature p,
+.value-card p,
+.empty-state p,
+.about-layout p,
+.subscribe-layout p,
+.team-role,
+.team-text,
+.article-body p,
+.article-body li {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 .site-header {
   background: #1d1b1b;
   border-bottom: 3px solid var(--gold);
@@ -771,6 +793,10 @@ input {
   font-size: 0.88rem;
 }
 
+.form-note:empty {
+  display: none;
+}
+
 .site-footer {
   background: #181616;
   color: var(--white);
@@ -1048,12 +1074,6 @@ input {
 
 .team-link::after {
   content: " ->";
-}
-
-.team-note {
-  color: rgba(5, 5, 5, 0.56);
-  font-size: 0.92rem;
-  margin-top: 1.2rem;
 }
 
 .author-columns-band {

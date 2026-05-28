@@ -288,7 +288,6 @@ function renderSubscribe(data) {
   setText("[data-subscribe-title]", data.subscribe.title);
   setText("[data-subscribe-description]", data.subscribe.description);
   setText("[data-subscribe-button]", data.subscribe.button);
-  setText("[data-subscribe-note]", data.subscribe.note);
 }
 
 function setupSubscribeForm(data) {

@@ -134,7 +134,6 @@
     "kicker": "Directiva CEAPS",
     "title": "Nuestro Equipo",
     "description": "Conoce a las personas que coordinan la agenda editorial, las actividades y la comunidad de CEAPS.",
-    "note": "Para agregar fotos, sube las imágenes al repositorio y escribe la ruta en el campo image de cada integrante. Por ejemplo: assets/img/equipo/nombre.jpg.",
     "members": [
       {
         "name": "Martín Castillo Jiménez",
@@ -176,7 +175,6 @@
     "title": "Recibe el boletín y las próximas actividades",
     "description": "Las nuevas ediciones y convocatorias se envían a la comunidad CEAPS a través de correo.",
     "button": "Suscribirme",
-    "note": "El formulario usa correo por ahora; se puede conectar después a Mailchimp, Buttondown o un backend propio.",
     "success": "Gracias. Se abrirá tu correo para completar la suscripción.",
     "emailSubject": "Suscripción al boletín CEAPS",
     "emailBody": "Hola CEAPS, quiero suscribirme al boletín."
