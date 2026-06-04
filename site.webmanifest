@@ -1,0 +1,19 @@
+{
+  "name": "CEAPS",
+  "short_name": "CEAPS",
+  "description": "Club de Economia, Actualidad Politica y Sociedad de la Universidad Adolfo Ibanez.",
+  "lang": "es-CL",
+  "start_url": "/",
+  "scope": "/",
+  "display": "minimal-ui",
+  "background_color": "#201e1e",
+  "theme_color": "#201e1e",
+  "icons": [
+    {
+      "src": "/assets/img/brand/ceaps-lambda.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

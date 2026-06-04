@@ -1,0 +1,738 @@
+{
+  "site": {
+    "name": "CEAPS",
+    "kicker": "Club universitario",
+    "fullName": "Club de Economía, Actualidad Política y Sociedad",
+    "pageTitle": "CEAPS | Club de Economía, Actualidad Política y Sociedad",
+    "description": "CEAPS reúne análisis, debate e investigación sobre economía, actualidad política y sociedad desde una mirada universitaria.",
+    "email": "contacto@ceaps.cl",
+    "founded": "2026"
+  },
+  "types": {
+    "newsletter": "Boletín",
+    "opinion": "Columna",
+    "paper": "Paper",
+    "event": "Evento",
+    "news": "Noticia",
+    "opportunity": "Oportunidad"
+  },
+  "navigation": [
+    {
+      "label": "Boletín",
+      "href": "index.html#boletin"
+    },
+    {
+      "label": "Columnas",
+      "href": "index.html#columnas"
+    },
+    {
+      "label": "Agenda",
+      "href": "index.html#noticias-eventos"
+    },
+    {
+      "label": "Papers",
+      "href": "index.html#papers"
+    },
+    {
+      "label": "Oportunidades",
+      "href": "index.html#oportunidades"
+    },
+    {
+      "label": "Sobre CEAPS",
+      "href": "index.html#sobre"
+    }
+  ],
+  "hero": {
+    "kicker": "Fundado en 2026",
+    "title": "Club de Economía, Actualidad Política y Sociedad",
+    "description": "Un espacio universitario para leer la contingencia con método, discutir evidencia y publicar ideas sobre economía, política y sociedad.",
+    "actions": [
+      {
+        "label": "Leer publicaciones",
+        "href": "#ultimas"
+      },
+      {
+        "label": "Conocer el club",
+        "href": "#sobre"
+      }
+    ],
+    "featuredIds": [
+      "columna-modelo-chileno-ciclo-electoral",
+      "paper-instituciones-polarizacion-cono-sur",
+      "evento-politica-monetaria-inflacion",
+      "oportunidad-ayudantes-economia-comportamiento"
+    ]
+  },
+  "sections": {
+    "latest": {
+      "kicker": "Últimas publicaciones",
+      "title": "Lecturas recientes",
+      "description": "Columnas, noticias, papers, boletines y convocatorias publicados por el club."
+    },
+    "newsletter": {
+      "kicker": "Publicación quincenal",
+      "title": "Boletín CEAPS",
+      "description": "Ediciones periódicas para seguir el pulso político, económico y social.",
+      "cta": "Suscribirse al boletín"
+    },
+    "columns": {
+      "kicker": "Opinión y análisis",
+      "title": "Columnas",
+      "description": "Textos breves de estudiantes, académicos e invitados con foco en argumentos claros y debate público.",
+      "filters": [
+        {
+          "label": "Todas",
+          "value": "todas"
+        },
+        {
+          "label": "Estudiantiles",
+          "value": "estudiantil"
+        },
+        {
+          "label": "Académicas",
+          "value": "academica"
+        }
+      ]
+    },
+    "newsEvents": {
+      "kicker": "Vida del club",
+      "title": "Noticias y eventos",
+      "description": "Actividades, anuncios y encuentros organizados por CEAPS.",
+      "newsTitle": "Noticias",
+      "eventsTitle": "Agenda"
+    },
+    "papers": {
+      "kicker": "Investigación",
+      "title": "Papers y documentos",
+      "description": "Selección de trabajos académicos, revisiones de literatura y documentos de discusión."
+    },
+    "opportunities": {
+      "kicker": "Convocatorias",
+      "title": "Oportunidades",
+      "description": "Ayudantías, llamados a publicar, postulaciones y espacios de colaboración."
+    }
+  },
+  "about": {
+    "kicker": "Sobre CEAPS",
+    "title": "Un club para pensar con rigor la vida pública",
+    "description": "CEAPS busca formar una comunidad universitaria capaz de conectar teoría, evidencia y contingencia. Publicamos análisis, organizamos conversaciones y abrimos espacios para que estudiantes puedan investigar, escribir y debatir con estándar académico.",
+    "action": {
+      "label": "Ver equipo directivo",
+      "href": "equipo.html"
+    },
+    "values": [
+      {
+        "title": "Rigor",
+        "description": "Cada texto debe distinguir datos, interpretación y opinión. La claridad metodológica importa tanto como la postura."
+      },
+      {
+        "title": "Pluralismo",
+        "description": "El club promueve desacuerdos bien argumentados y una conversación pública que no reduzca la complejidad."
+      },
+      {
+        "title": "Vinculación",
+        "description": "La agenda combina estudiantes, profesores, egresados y actores públicos para conectar aula y actualidad."
+      }
+    ]
+  },
+  "teamPage": {
+    "kicker": "Directiva CEAPS",
+    "title": "Nuestro Equipo",
+    "description": "Conoce a las personas que coordinan la agenda editorial, las actividades y la comunidad de CEAPS.",
+    "members": [
+      {
+        "name": "Martín Castillo Jiménez",
+        "role": "Presidente CEAPS",
+        "image": "assets/img/equipo/presidente.jpg",
+        "text": "Encargado de coordinar la dirección general del club, impulsar la agenda editorial y promover espacios de conversación sobre economía, actualidad política y sociedad.\n\nEstudiante de Ingeniería Comercial y del Magíster en Economía y Políticas Públicas de la Universidad Adolfo Ibáñez. Sus principales intereses son la historia de Asia, especialmente de China, y cómo esta ha transformado el panorama internacional.",
+        "email": "martincastillo@alumnos.uai.cl",
+        "link": ""
+      },
+      {
+        "name": "Maximiliano Osorio Requena",
+        "role": "Vicepresidente y Director del departamento de Vinculación con el Medio",
+        "image": "assets/img/equipo/vicepresidente.PNG",
+        "text": "Encargado de apoyar la coordinación estratégica del club, fortalecer la gestión interna y promover el uso de herramientas analíticas y computacionales para el estudio de la economía, la actualidad política y la sociedad.\n\nEstudiante del Magíster en Economía y Políticas Públicas de la Universidad Adolfo Ibáñez.",
+        "email": "maxiosorio@alumnos.uai.cl",
+        "link": ""
+      },
+      {
+        "name": "Martín Jorquera Paredes",
+        "role": "Miembro del Departamento de Vinculación con el Medio",
+        "image": "assets/img/equipo/vinculacion1.jpg",
+        "text": "Encargado de apoyar la vinculación del CEAPS con el mundo público, académico, político y social, colaborando en la organización de charlas, visitas institucionales y espacios de encuentro que acerquen a la comunidad universitaria.\n\nEstudiante del Magíster en Economía y Políticas Públicas de la Universidad Adolfo Ibáñez. Sus principales intereses son las consultorías en el mundo público, la eficiencia tecnológica y la mejora de procesos.  ",
+        "email": "martjorquera@alumnos.uai.cl",
+        "link": ""
+      },
+      {
+        "name": "Nombre Integrante 4",
+        "role": "Vinculación y comunidad",
+        "image": "",
+        "text": "Este cuadro acepta una imagen, nombre, cargo, descripción y link opcional.",
+        "link": ""
+      }
+    ]
+  },
+  "subscribe": {
+    "kicker": "Comunidad",
+    "title": "Recibe el boletín y las próximas actividades",
+    "description": "Las nuevas ediciones y convocatorias se envían a la comunidad CEAPS a través de correo.",
+    "button": "Suscribirme",
+    "success": "Gracias. Se abrirá tu correo para completar la suscripción.",
+    "emailSubject": "Suscripción al boletín CEAPS",
+    "emailBody": "Hola CEAPS, quiero suscribirme al boletín."
+  },
+  "footer": {
+    "copyright": "CEAPS · Club de Economía, Actualidad Política y Sociedad."
+  },
+  "items": [
+    {
+      "id": "columna-modelo-chileno-ciclo-electoral",
+      "type": "opinion",
+      "category": "estudiantil",
+      "title": "Las tensiones del modelo chileno ante el ciclo electoral latinoamericano",
+      "summary": "Una lectura sobre cómo los debates económicos chilenos dialogan con la nueva ola electoral de la región.",
+      "excerpt": "El malestar con el desempeño económico ya no se expresa solo como crítica al crecimiento, sino como disputa por la arquitectura del Estado.",
+      "date": "2025-02-12",
+      "featured": true,
+      "author": {
+        "name": "María J. López",
+        "role": "Estudiante de Gobierno",
+        "initials": "ML"
+      },
+      "tags": [
+        "Chile",
+        "Elecciones",
+        "Economía política"
+      ],
+      "body": [
+        {
+          "type": "lead",
+          "text": "El ciclo electoral latinoamericano está obligando a revisar las certezas con las que Chile narró su propia transición económica."
+        },
+        {
+          "type": "paragraph",
+          "text": "Durante años, el debate público chileno descansó en una tensión relativamente estable: crecimiento con correcciones sociales, apertura económica con instituciones fuertes, modernización gradual con acuerdos políticos amplios. Esa fórmula hoy enfrenta una presión doble. Por un lado, las demandas sociales no se agotan en transferencias o reformas puntuales. Por otro, la región ofrece alternativas discursivas más impacientes, más plebiscitarias y menos confiadas en el lenguaje técnico."
+        },
+        {
+          "type": "paragraph",
+          "text": "El resultado es una conversación donde el modelo ya no se discute solo por sus resultados agregados, sino por sus promesas incumplidas de movilidad, seguridad y pertenencia. Allí el caso chileno se parece más a sus vecinos de lo que durante mucho tiempo quiso admitir."
+        },
+        {
+          "type": "heading",
+          "text": "La nueva gramática del malestar"
+        },
+        {
+          "type": "paragraph",
+          "text": "En Argentina, Ecuador, Colombia o Perú, los liderazgos emergentes han aprendido a convertir frustraciones económicas en críticas institucionales. Chile no está fuera de esa dinámica. La diferencia es que su institucionalidad aún conserva una capacidad mayor para procesar conflictos, aunque cada ciclo electoral vuelve más costosa esa mediación."
+        },
+        {
+          "type": "quote",
+          "text": "El desafío no es elegir entre técnica y política, sino construir una técnica que pueda ser públicamente defendida."
+        },
+        {
+          "type": "paragraph",
+          "text": "CEAPS propone leer este momento sin nostalgia ni entusiasmo automático. La estabilidad no es un argumento suficiente cuando amplios grupos perciben que el pacto social dejó de ordenar expectativas. Pero la ruptura tampoco garantiza soluciones cuando se instala sin diagnóstico institucional."
+        }
+      ]
+    },
+    {
+      "id": "paper-instituciones-polarizacion-cono-sur",
+      "type": "paper",
+      "category": "Ciencia política",
+      "title": "Instituciones débiles y polarización: evidencia comparada desde el Cono Sur",
+      "summary": "Revisión comparada sobre confianza institucional, fragmentación partidaria y polarización afectiva en cuatro países.",
+      "date": "2025-02-10",
+      "featured": true,
+      "author": {
+        "name": "Prof. Andrés Castillo",
+        "role": "ICS-UC",
+        "initials": "AC"
+      },
+      "tags": [
+        "Instituciones",
+        "Polarización",
+        "Cono Sur"
+      ],
+      "body": [
+        {
+          "type": "lead",
+          "text": "La polarización no surge únicamente por diferencias ideológicas; también aparece cuando las instituciones dejan de ser árbitros creíbles."
+        },
+        {
+          "type": "paragraph",
+          "text": "Este documento compara datos de Chile, Argentina, Uruguay y Paraguay para explorar la relación entre confianza institucional y polarización afectiva. El hallazgo central es que la desconfianza opera como un acelerador: cuando los ciudadanos perciben que las reglas se aplican de manera desigual, se vuelven más propensos a interpretar al adversario político como una amenaza."
+        },
+        {
+          "type": "heading",
+          "text": "Resultados principales"
+        },
+        {
+          "type": "list",
+          "items": [
+            "La confianza en tribunales y Congreso predice menor polarización afectiva.",
+            "La fragmentación partidaria aumenta la volatilidad, pero no explica por sí sola la hostilidad entre grupos.",
+            "Los medios digitales intensifican la polarización cuando interactúan con baja confianza institucional."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "El paper concluye que fortalecer capacidades estatales y reglas transparentes puede tener efectos políticos indirectos: reduce la sospecha permanente y mejora las condiciones para la deliberación."
+        }
+      ]
+    },
+    {
+      "id": "evento-politica-monetaria-inflacion",
+      "type": "event",
+      "category": "charla",
+      "title": "Política monetaria en tiempos de inflación: desafíos para el Banco Central",
+      "summary": "Conversatorio con académicos y estudiantes sobre inflación, credibilidad y transmisión de tasas.",
+      "date": "2025-02-08",
+      "featured": true,
+      "event": {
+        "date": "2025-02-14",
+        "time": "17:30",
+        "place": "Sala A-12"
+      },
+      "tags": [
+        "Banco Central",
+        "Inflación",
+        "Macroeconomía"
+      ],
+      "cta": {
+        "label": "Inscribirme",
+        "href": "mailto:contacto@ceaps.cl?subject=Inscripción%20charla%20política%20monetaria"
+      },
+      "body": [
+        {
+          "type": "lead",
+          "text": "CEAPS invita a una conversación abierta sobre los dilemas de la política monetaria después del ciclo inflacionario reciente."
+        },
+        {
+          "type": "paragraph",
+          "text": "La actividad abordará cómo se construye credibilidad, qué costos distributivos tienen las decisiones de tasas y de qué manera se comunica la incertidumbre en contextos de alta sensibilidad social."
+        },
+        {
+          "type": "heading",
+          "text": "Programa"
+        },
+        {
+          "type": "list",
+          "items": [
+            "17:30 · Apertura CEAPS.",
+            "17:40 · Presentación principal.",
+            "18:20 · Preguntas y discusión.",
+            "18:45 · Cierre."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "oportunidad-ayudantes-economia-comportamiento",
+      "type": "opportunity",
+      "category": "ayudantía",
+      "title": "Se buscan ayudantes de investigación en economía del comportamiento",
+      "summary": "Convocatoria para estudiantes interesados en análisis experimental, revisión bibliográfica y trabajo con datos.",
+      "date": "2025-02-06",
+      "deadline": "2025-02-28",
+      "featured": true,
+      "author": {
+        "name": "Prof. R. Morales",
+        "role": "Economía del comportamiento",
+        "initials": "RM"
+      },
+      "tags": [
+        "Investigación",
+        "Datos",
+        "Ayudantía"
+      ],
+      "cta": {
+        "label": "Postular",
+        "href": "mailto:contacto@ceaps.cl?subject=Postulación%20ayudantía%20economía%20del%20comportamiento"
+      },
+      "body": [
+        {
+          "type": "lead",
+          "text": "La convocatoria está dirigida a estudiantes con interés en investigación aplicada y disposición para aprender herramientas de análisis."
+        },
+        {
+          "type": "paragraph",
+          "text": "El equipo trabajará en un proyecto sobre toma de decisiones bajo incertidumbre, sesgos de información y preferencias sociales. No se exige experiencia previa avanzada, pero sí rigurosidad, compromiso y buena comunicación."
+        },
+        {
+          "type": "heading",
+          "text": "Perfil esperado"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Interés en economía, psicología, políticas públicas o ciencia de datos.",
+            "Disponibilidad de 6 horas semanales.",
+            "Manejo básico de planillas; se valorará conocimiento de R, Python o Stata."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "boletin-08-presupuesto-2025",
+      "type": "newsletter",
+      "category": "boletin",
+      "issue": "#08",
+      "title": "Economía política del presupuesto 2025: ganadores y perdedores en la discusión fiscal",
+      "summary": "Este número analiza las principales implicancias del presupuesto aprobado, con columnas sobre gasto social, regiones y deuda pública.",
+      "date": "2025-02-03",
+      "tags": [
+        "Presupuesto",
+        "Gasto público",
+        "Regiones"
+      ],
+      "body": [
+        {
+          "type": "lead",
+          "text": "El presupuesto 2025 no solo distribuye recursos: también ordena prioridades políticas para un año exigente."
+        },
+        {
+          "type": "paragraph",
+          "text": "La edición revisa las partidas con mayor crecimiento, las áreas donde se posterga inversión y las tensiones entre disciplina fiscal y demandas territoriales. El foco está puesto en entender quién gana capacidad de acción y quién queda sujeto a restricciones más duras."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Radiografía del gasto social.",
+            "Regiones y ejecución presupuestaria.",
+            "Debate sobre deuda pública y regla fiscal."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "noticia-convocatoria-comite-editorial",
+      "type": "news",
+      "category": "club",
+      "title": "CEAPS abre convocatoria para integrar su comité editorial 2025",
+      "summary": "El club recibirá postulaciones de estudiantes interesados en edición, revisión y planificación de contenidos.",
+      "date": "2025-01-31",
+      "tags": [
+        "Convocatoria",
+        "Editorial",
+        "Comunidad"
+      ],
+      "body": [
+        {
+          "type": "lead",
+          "text": "El comité editorial coordina las columnas, boletines y documentos de discusión publicados por CEAPS."
+        },
+        {
+          "type": "paragraph",
+          "text": "La convocatoria está abierta a estudiantes de distintas carreras. Se valorará interés por la escritura, capacidad de síntesis y disposición a revisar textos de pares con respeto y criterio académico."
+        },
+        {
+          "type": "paragraph",
+          "text": "Las personas seleccionadas participarán en reuniones quincenales y acompañarán el proceso de edición de las publicaciones del semestre."
+        }
+      ]
+    },
+    {
+      "id": "columna-trilema-inflacion-empleo-crecimiento",
+      "type": "opinion",
+      "category": "estudiantil",
+      "title": "El trilema imposible: inflación, empleo y crecimiento en la gestión de Boric",
+      "summary": "Una columna sobre los límites de prometer simultáneamente estabilidad de precios, empleo robusto y crecimiento acelerado.",
+      "excerpt": "Las metas del gobierno colisionan con una realidad macroeconómica que no perdona errores de diagnóstico.",
+      "date": "2025-01-29",
+      "author": {
+        "name": "Felipe Vargas",
+        "role": "Est. Ingeniería Comercial, 4° año",
+        "initials": "FV"
+      },
+      "tags": [
+        "Macroeconomía",
+        "Gobierno",
+        "Crecimiento"
+      ],
+      "body": [
+        {
+          "type": "lead",
+          "text": "Toda política económica administra tensiones. El problema aparece cuando se promete que esas tensiones no existen."
+        },
+        {
+          "type": "paragraph",
+          "text": "La gestión económica reciente muestra que controlar inflación, recuperar empleo y acelerar crecimiento no siempre empujan en la misma dirección. La discusión pública tiende a tratarlos como objetivos acumulables, pero la política monetaria y fiscal opera bajo restricciones concretas."
+        },
+        {
+          "type": "paragraph",
+          "text": "El punto no es renunciar a la ambición, sino reconocer que cada prioridad tiene costos y horizontes distintos."
+        }
+      ]
+    },
+    {
+      "id": "boletin-07-politica-exterior",
+      "type": "newsletter",
+      "category": "boletin",
+      "issue": "#07",
+      "title": "Balance de año en política exterior: Chile y el nuevo orden multilateral",
+      "summary": "Revisión de los hitos diplomáticos del año y los desafíos que enfrenta la política exterior chilena.",
+      "date": "2025-01-20",
+      "tags": [
+        "Política exterior",
+        "Multilateralismo",
+        "Chile"
+      ],
+      "body": [
+        {
+          "type": "lead",
+          "text": "La política exterior chilena enfrenta un escenario donde la estabilidad normativa ya no puede darse por garantizada."
+        },
+        {
+          "type": "paragraph",
+          "text": "El boletín revisa la relación con organismos multilaterales, la agenda regional y los desafíos de una diplomacia que debe equilibrar principios, comercio y seguridad."
+        }
+      ]
+    },
+    {
+      "id": "columna-descentralizacion-fiscal",
+      "type": "opinion",
+      "category": "academica",
+      "title": "Por qué la descentralización fiscal sigue siendo una promesa incumplida en Chile",
+      "summary": "Análisis sobre municipios, atribuciones y restricciones fiscales a tres décadas de reformas descentralizadoras.",
+      "excerpt": "Treinta años después de la regionalización, los municipios siguen sin recursos para ejecutar políticas propias.",
+      "date": "2025-01-18",
+      "author": {
+        "name": "Prof. Sebastián Cañas",
+        "role": "Economía Regional, FEN-UChile",
+        "initials": "SC"
+      },
+      "tags": [
+        "Descentralización",
+        "Municipios",
+        "Regiones"
+      ],
+      "body": [
+        {
+          "type": "lead",
+          "text": "La descentralización fiscal chilena avanza en el lenguaje, pero tropieza en la distribución real de recursos."
+        },
+        {
+          "type": "paragraph",
+          "text": "Las reformas han creado nuevas autoridades y mecanismos de coordinación, pero el margen presupuestario sigue concentrado. Sin ingresos propios suficientes ni reglas de transferencia estables, la autonomía local queda limitada a la gestión de escasez."
+        },
+        {
+          "type": "paragraph",
+          "text": "La pregunta de fondo no es solo cuánto poder se transfiere, sino qué capacidades acompañan esa transferencia."
+        }
+      ]
+    },
+    {
+      "id": "evento-taller-escritura-opinion",
+      "type": "event",
+      "category": "taller",
+      "title": "Taller de escritura de opinión: del argumento a la columna",
+      "summary": "Sesión práctica para preparar textos breves, estructurar tesis y trabajar edición entre pares.",
+      "date": "2025-01-15",
+      "event": {
+        "date": "2025-01-24",
+        "time": "16:00",
+        "place": "Biblioteca central, sala 3"
+      },
+      "tags": [
+        "Escritura",
+        "Columnas",
+        "Formación"
+      ],
+      "body": [
+        {
+          "type": "lead",
+          "text": "El taller está pensado para estudiantes que quieran transformar una intuición de actualidad en una columna publicable."
+        },
+        {
+          "type": "paragraph",
+          "text": "Trabajaremos tesis, estructura argumental, evidencia mínima y cierre. Cada participante podrá llevar una idea inicial y recibir retroalimentación del equipo editorial."
+        }
+      ]
+    },
+    {
+      "id": "paper-instituciones-extractivas-desigualdad-regional",
+      "type": "paper",
+      "category": "Economía política",
+      "title": "Instituciones extractivas y desigualdad regional: evidencia para Chile 1990-2020",
+      "summary": "El estudio examina la relación entre calidad institucional y disparidades regionales usando datos administrativos.",
+      "date": "2025-01-12",
+      "author": {
+        "name": "Castillo, A.; Fuentes, M.; Lagos, R.",
+        "role": "Documento de trabajo",
+        "initials": "CF"
+      },
+      "tags": [
+        "Instituciones",
+        "Desigualdad",
+        "Chile"
+      ],
+      "body": [
+        {
+          "type": "lead",
+          "text": "Las brechas regionales no pueden explicarse solo por geografía o dotación productiva."
+        },
+        {
+          "type": "paragraph",
+          "text": "El trabajo propone un índice de calidad institucional subnacional y lo contrasta con indicadores de ingreso, empleo e inversión. Los resultados muestran efectos heterogéneos entre regiones mineras y no mineras."
+        }
+      ]
+    },
+    {
+      "id": "noticia-alianza-observatorio-electoral",
+      "type": "news",
+      "category": "alianza",
+      "title": "CEAPS colaborará con observatorio electoral universitario durante el primer semestre",
+      "summary": "La alianza permitirá publicar minutas de seguimiento, datos electorales y explicadores metodológicos.",
+      "date": "2025-01-10",
+      "tags": [
+        "Elecciones",
+        "Datos",
+        "Alianza"
+      ],
+      "body": [
+        {
+          "type": "lead",
+          "text": "La colaboración busca acercar datos electorales a estudiantes y lectores no especializados."
+        },
+        {
+          "type": "paragraph",
+          "text": "Durante el semestre se publicarán minutas breves sobre participación, competencia territorial y comportamiento electoral. El material estará disponible en la sección de publicaciones del sitio."
+        }
+      ]
+    },
+    {
+      "id": "boletin-06-reforma-pensiones",
+      "type": "newsletter",
+      "category": "boletin",
+      "issue": "#06",
+      "title": "Reforma de pensiones: cronología de un debate que no termina",
+      "summary": "Análisis técnico y político del proyecto de reforma previsional y sus perspectivas de avance.",
+      "date": "2025-01-06",
+      "tags": [
+        "Pensiones",
+        "Reforma",
+        "Política social"
+      ],
+      "body": [
+        {
+          "type": "lead",
+          "text": "La reforma de pensiones condensa una discusión sobre solidaridad, ahorro y confianza institucional."
+        },
+        {
+          "type": "paragraph",
+          "text": "Esta edición ordena los hitos legislativos, identifica los puntos de bloqueo y explica por qué los acuerdos parciales han sido insuficientes para cerrar el debate."
+        }
+      ]
+    },
+    {
+      "id": "columna-giro-conservador-america-latina",
+      "type": "opinion",
+      "category": "estudiantil",
+      "title": "El giro conservador en América Latina: ¿nueva ola o ruido electoral?",
+      "summary": "Una revisión crítica de los triunfos recientes de derechas latinoamericanas y sus diferencias programáticas.",
+      "excerpt": "Las victorias de Milei y Noboa no responden a una misma lógica ideológica: confundirlas es un error analítico.",
+      "date": "2024-12-19",
+      "author": {
+        "name": "Martina Rojas",
+        "role": "Est. Ciencia Política, 3° año",
+        "initials": "MR"
+      },
+      "tags": [
+        "América Latina",
+        "Derechas",
+        "Elecciones"
+      ],
+      "body": [
+        {
+          "type": "lead",
+          "text": "Hablar de una ola conservadora puede ordenar titulares, pero no necesariamente explica coaliciones, programas ni electorados."
+        },
+        {
+          "type": "paragraph",
+          "text": "Los casos recientes combinan voto castigo, inseguridad, crisis económica y agotamiento de partidos tradicionales. La etiqueta ideológica captura solo una parte de un fenómeno más fragmentado."
+        }
+      ]
+    },
+    {
+      "id": "boletin-05-mercado-laboral-post-pandemia",
+      "type": "newsletter",
+      "category": "boletin",
+      "issue": "#05",
+      "title": "Mercado laboral post-pandemia: brechas que persisten y nuevas tendencias",
+      "summary": "Datos y análisis sobre empleo, informalidad y desigualdad de género en el mercado del trabajo.",
+      "date": "2024-12-09",
+      "tags": [
+        "Trabajo",
+        "Informalidad",
+        "Género"
+      ],
+      "body": [
+        {
+          "type": "lead",
+          "text": "La recuperación del empleo no ha significado una recuperación simétrica de oportunidades."
+        },
+        {
+          "type": "paragraph",
+          "text": "El boletín revisa participación laboral, informalidad y brechas de cuidado, con atención a los sectores donde la recuperación sigue siendo más frágil."
+        }
+      ]
+    },
+    {
+      "id": "paper-salario-minimo-empleo-informal",
+      "type": "paper",
+      "category": "Economía del trabajo",
+      "title": "Efectos del salario mínimo sobre el empleo informal: heterogeneidades por sector",
+      "summary": "Mediante discontinuidades de regresión, el estudio identifica impactos diferenciados sobre informalidad.",
+      "date": "2024-11-30",
+      "author": {
+        "name": "Pérez, A.; Soto, C.",
+        "role": "FEN-UChile",
+        "initials": "PS"
+      },
+      "tags": [
+        "Salario mínimo",
+        "Informalidad",
+        "RD Design"
+      ],
+      "body": [
+        {
+          "type": "lead",
+          "text": "Los efectos del salario mínimo dependen de la estructura sectorial y de la capacidad de fiscalización."
+        },
+        {
+          "type": "paragraph",
+          "text": "La investigación encuentra que los ajustes salariales tienen efectos más fuertes sobre informalidad en sectores de menor productividad y mayor rotación."
+        }
+      ]
+    },
+    {
+      "id": "boletin-04-constitucion-economia",
+      "type": "newsletter",
+      "category": "boletin",
+      "issue": "#04",
+      "title": "Constitución y economía: qué modelo consagra el nuevo texto",
+      "summary": "Análisis de los capítulos económicos del proceso constitucional y su impacto potencial en inversión.",
+      "date": "2024-11-25",
+      "tags": [
+        "Constitución",
+        "Inversión",
+        "Instituciones"
+      ],
+      "body": [
+        {
+          "type": "lead",
+          "text": "Los textos constitucionales no fijan toda la política económica, pero sí ordenan límites y expectativas."
+        },
+        {
+          "type": "paragraph",
+          "text": "La edición revisa propiedad, derechos sociales, regulación económica y el rol del Estado, separando efectos jurídicos directos de interpretaciones políticas."
+        }
+      ]
+    }
+  ]
+}
