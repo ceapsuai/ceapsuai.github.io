@@ -89,6 +89,11 @@
         }
       ]
     },
+    "columnists": {
+      "kicker": "Comunidad editorial",
+      "title": "Columnistas",
+      "description": "Autores que publican columnas de opinión y análisis en CEAPS. Desde aquí se puede revisar el perfil editorial de cada autor y sus textos publicados."
+    },
     "newsEvents": {
       "kicker": "Vida del club",
       "title": "Noticias y eventos",
@@ -128,7 +133,88 @@
         "title": "Vinculación",
         "description": "La agenda combina estudiantes, profesores, egresados y actores públicos para conectar aula y actualidad."
       }
-    ]
+    ],
+    "organization": {
+      "kicker": "Organización interna",
+      "title": "Cómo se organiza CEAPS",
+      "description": "La estructura del club combina dirección estratégica, vinculación, investigación y comunicación. La idea es que cada área alimente a las otras para convertir temas de actualidad en actividades, publicaciones y espacios de debate.",
+      "directive": {
+        "label": "Dirección estratégica",
+        "title": "Presidencia y Directiva Central",
+        "description": "Define prioridades, coordina el trabajo general del club y revisa que las publicaciones y actividades mantengan rigor, coherencia e identidad institucional.",
+        "members": [
+          {
+            "name": "Martín Castillo Jiménez",
+            "role": "Presidencia"
+          },
+          {
+            "name": "Maximiliano Osorio Requena",
+            "role": "Vicepresidencia y Vinculación"
+          },
+          {
+            "name": "Martín Jorquera Paredes",
+            "role": "Secretaría General y Vinculación"
+          },
+          {
+            "name": "Javier Goic Bahamondes",
+            "role": "Tesorería"
+          }
+        ]
+      },
+      "departments": [
+        {
+          "label": "Conecta",
+          "title": "Vinculación con el Medio",
+          "description": "Conecta a CEAPS con profesores, instituciones, centros de estudiantes, invitados y espacios de discusión pública.",
+          "functions": [
+            "Organizar charlas, conversatorios y visitas institucionales.",
+            "Construir redes con facultades, escuelas, centros de estudiantes e instituciones afines.",
+            "Proyectar actividades interuniversitarias y alianzas futuras."
+          ]
+        },
+        {
+          "label": "Analiza",
+          "title": "Investigación y Análisis",
+          "description": "Monitorea la coyuntura, ordena datos y produce insumos claros para boletines, columnas, redes y actividades.",
+          "functions": [
+            "Seleccionar noticias y temas relevantes de economía, política, sociedad y relaciones internacionales.",
+            "Preparar explicaciones breves con datos clave, fuentes y contexto.",
+            "Mantener un banco de fuentes, indicadores y referencias académicas."
+          ]
+        },
+        {
+          "label": "Difunde",
+          "title": "Comunicaciones",
+          "description": "Transforma los insumos del club en contenido público, visual y coherente con la identidad de CEAPS.",
+          "functions": [
+            "Gestionar redes sociales, piezas gráficas y textos de difusión.",
+            "Adaptar hallazgos e ideas al lenguaje de carruseles, historias, boletines y web.",
+            "Registrar y comunicar actividades antes, durante y después de realizarlas."
+          ]
+        }
+      ],
+      "flow": {
+        "title": "Flujo de trabajo",
+        "steps": [
+          {
+            "title": "Definir foco",
+            "description": "La directiva fija prioridades de actividades, boletines y temas del mes."
+          },
+          {
+            "title": "Levantar insumos",
+            "description": "Investigación prepara datos y fuentes; Vinculación entrega contactos, fechas e invitados."
+          },
+          {
+            "title": "Transformar en contenido",
+            "description": "Comunicaciones convierte esos insumos en piezas web, redes, boletines o materiales de difusión."
+          },
+          {
+            "title": "Revisar y publicar",
+            "description": "La directiva revisa datos, tono e identidad antes de publicar o difundir."
+          }
+        ]
+      }
+    }
   },
   "teamPage": {
     "kicker": "Directiva CEAPS",

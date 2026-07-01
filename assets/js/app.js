@@ -10,7 +10,7 @@ import {
   renderHeader,
   renderTags,
   setupMobileMenu,
-} from "./data.js?v=20260604-final-polish";
+} from "./data.js?v=20260701-editorial-org";
 
 const state = {
   columnFilter: "todas",
@@ -39,6 +39,7 @@ function renderHome(data) {
   renderLatest(data);
   renderNewsletter(data);
   renderColumns(data);
+  renderColumnists(data);
   renderNewsEvents(data);
   renderPapers(data);
   renderOpportunities(data);
@@ -171,6 +172,76 @@ function renderColumnGrid(data) {
   items.forEach((item) => target.append(createCard(item, data, { variant: "opinion-card" })));
 }
 
+function renderColumnists(data) {
+  const section = data.sections.columnists;
+  const target = document.querySelector("[data-columnists-grid]");
+  if (!section || !target) return;
+
+  setSectionText("columnists", section);
+  target.replaceChildren();
+
+  const columnists = getColumnists(data);
+  if (columnists.length === 0) {
+    target.append(createEmptyState("Columnistas próximamente", "Los perfiles aparecerán cuando se publiquen nuevas columnas."));
+    return;
+  }
+
+  columnists.forEach((person) => {
+    const card = createElement("a", "columnist-card");
+    card.href = `autor.html?autor=${encodeURIComponent(person.id)}`;
+    card.setAttribute("aria-label", `Ver columnas de ${person.name}`);
+
+    const avatar = createElement("span", "avatar columnist-avatar", person.initials);
+    const copy = createElement("div", "columnist-copy");
+    copy.append(createElement("span", "columnist-count", `${person.count} ${person.count === 1 ? "columna" : "columnas"}`));
+    copy.append(createElement("h4", "", person.name));
+    copy.append(createElement("p", "", person.role));
+
+    if (person.latestTitle) {
+      copy.append(createElement("small", "", `Última publicación: ${person.latestTitle}`));
+    }
+
+    card.append(avatar, copy);
+    target.append(card);
+  });
+}
+
+function getColumnists(data) {
+  const people = new Map();
+  const members = data.teamPage?.members || [];
+
+  getItems(data, { type: "opinion" }).forEach((item) => {
+    if (!item.author?.name) return;
+
+    const id = item.author.id || slugify(item.author.name);
+    const member = members.find((person) => person.authorId === id || slugify(person.name) === id);
+
+    if (!people.has(id)) {
+      people.set(id, {
+        id,
+        name: member?.name || item.author.name,
+        role: item.author.role || member?.role || "Columnista CEAPS",
+        initials: item.author.initials || createInitials(item.author.name),
+        count: 0,
+        latestTitle: "",
+        latestDate: "",
+      });
+    }
+
+    const person = people.get(id);
+    person.count += 1;
+    if (!person.latestDate || item.date > person.latestDate) {
+      person.latestDate = item.date;
+      person.latestTitle = item.title;
+    }
+  });
+
+  return Array.from(people.values()).sort((a, b) => {
+    if (b.count !== a.count) return b.count - a.count;
+    return b.latestDate.localeCompare(a.latestDate);
+  });
+}
+
 function renderNewsEvents(data) {
   setSectionText("newsEvents", data.sections.newsEvents);
   setText("[data-news-title]", data.sections.newsEvents.newsTitle);
@@ -260,6 +331,68 @@ function renderAbout(data) {
     item.append(createElement("p", "", value.description));
     target.append(item);
   });
+
+  renderOrganization(data);
+}
+
+function renderOrganization(data) {
+  const organization = data.about.organization;
+  const panel = document.querySelector("[data-organization-panel]");
+  if (!organization || !panel) {
+    if (panel) panel.hidden = true;
+    return;
+  }
+
+  panel.hidden = false;
+  setText("[data-organization-kicker]", organization.kicker);
+  setText("[data-organization-title]", organization.title);
+  setText("[data-organization-description]", organization.description);
+
+  const directiveTarget = document.querySelector("[data-organization-directive]");
+  directiveTarget.replaceChildren();
+  const directive = createElement("article", "org-directive-card");
+  directive.append(createElement("span", "org-label", organization.directive.label));
+  directive.append(createElement("h4", "", organization.directive.title));
+  directive.append(createElement("p", "", organization.directive.description));
+
+  const memberList = createElement("ul", "org-name-list");
+  organization.directive.members.forEach((member) => {
+    const item = createElement("li", "");
+    item.append(createElement("strong", "", member.name));
+    item.append(document.createTextNode(` · ${member.role}`));
+    memberList.append(item);
+  });
+  directive.append(memberList);
+  directiveTarget.append(directive);
+
+  const departmentsTarget = document.querySelector("[data-organization-departments]");
+  departmentsTarget.replaceChildren();
+  organization.departments.forEach((department) => {
+    const card = createElement("article", "org-card");
+    card.append(createElement("span", "org-label", department.label));
+    card.append(createElement("h4", "", department.title));
+    card.append(createElement("p", "", department.description));
+
+    const list = createElement("ul", "org-function-list");
+    department.functions.forEach((item) => {
+      list.append(createElement("li", "", item));
+    });
+    card.append(list);
+    departmentsTarget.append(card);
+  });
+
+  const flowTarget = document.querySelector("[data-organization-flow]");
+  flowTarget.replaceChildren();
+  flowTarget.append(createElement("h4", "", organization.flow.title));
+  const steps = createElement("div", "org-flow-grid");
+  organization.flow.steps.forEach((step, index) => {
+    const card = createElement("article", "org-flow-step");
+    card.append(createElement("span", "", String(index + 1).padStart(2, "0")));
+    card.append(createElement("strong", "", step.title));
+    card.append(createElement("p", "", step.description));
+    steps.append(card);
+  });
+  flowTarget.append(steps);
 }
 
 function renderHeroTitle(title) {
@@ -329,6 +462,25 @@ function setText(selector, value) {
 
 function toKebab(value) {
   return value.replace(/[A-Z]/g, (letter) => `-${letter.toLowerCase()}`);
+}
+
+function createInitials(value) {
+  return value
+    .split(/\s+/)
+    .filter(Boolean)
+    .slice(0, 2)
+    .map((word) => word[0])
+    .join("")
+    .toUpperCase();
+}
+
+function slugify(value) {
+  return value
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
 }
 
 function renderError(error) {

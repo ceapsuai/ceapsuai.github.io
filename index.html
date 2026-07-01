@@ -26,7 +26,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/styles.css?v=20260604-final-polish">
+    <link rel="stylesheet" href="assets/css/styles.css?v=20260701-editorial-org">
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -43,7 +43,7 @@
         }
       }
     </script>
-    <script type="module" src="assets/js/app.js?v=20260604-final-polish"></script>
+    <script type="module" src="assets/js/app.js?v=20260701-editorial-org"></script>
   </head>
   <body>
     <a class="skip-link" href="#contenido">Saltar al contenido</a>
@@ -122,6 +122,14 @@
           <div class="segmented-control" role="tablist" aria-label="Filtrar columnas" data-column-filters></div>
         </div>
         <div class="shell card-grid columns-grid" data-columns-grid></div>
+        <div class="shell columnists-block">
+          <div class="columnists-heading">
+            <p class="eyebrow" data-columnists-kicker></p>
+            <h3 data-columnists-title></h3>
+            <p data-columnists-description></p>
+          </div>
+          <div class="columnists-grid" data-columnists-grid></div>
+        </div>
       </section>
 
       <section class="content-band section-ink" id="noticias-eventos">
@@ -171,6 +179,16 @@
             <a class="button button-dark about-action" href="equipo.html" data-about-action></a>
           </div>
           <div class="about-values" data-about-values></div>
+        </div>
+        <div class="shell organization-panel" data-organization-panel>
+          <div class="organization-intro">
+            <p class="eyebrow" data-organization-kicker></p>
+            <h3 data-organization-title></h3>
+            <p data-organization-description></p>
+          </div>
+          <div class="org-directive" data-organization-directive></div>
+          <div class="org-grid" data-organization-departments></div>
+          <div class="org-flow" data-organization-flow></div>
         </div>
       </section>
 
