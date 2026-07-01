@@ -1,0 +1,10 @@
+.DS_Store
+Thumbs.db
+*.log
+.Rhistory
+.Rproj.user/
+.cache/
+.edge-profile*/
+.chrome-profile*/
+.chrome-mobile-check*/
+mobile-*-check.png
