@@ -270,6 +270,51 @@
   },
   "items": [
     {
+      "id": "estudiantes-uai-crean-club-ceaps",
+      "type": "news",
+      "category": "institucional",
+      "title": "Estudiantes UAI crean club para promover el análisis y debate sobre economía, política y sociedad",
+      "summary": "La Escuela de Gobierno UAI destacó la creación de CEAPS, iniciativa impulsada por estudiantes del Magíster en Economía y Políticas Públicas para abrir espacios de análisis, conversación y participación universitaria.",
+      "excerpt": "La nota institucional presenta el origen de CEAPS y su propósito de conectar economía, política, sociedad y actualidad desde la vida universitaria.",
+      "date": "2026-06-19",
+      "source": {
+        "name": "Escuela de Gobierno UAI",
+        "url": "https://www.uai.cl/noticias/gobierno/estudiantes-uai-crean-club-para-promover-el-analisis-y-debate-sobre-economia-politica-y-sociedad"
+      },
+      "cta": {
+        "label": "Leer nota original en UAI",
+        "href": "https://www.uai.cl/noticias/gobierno/estudiantes-uai-crean-club-para-promover-el-analisis-y-debate-sobre-economia-politica-y-sociedad",
+        "external": true
+      },
+      "tags": [
+        "CEAPS",
+        "Escuela de Gobierno",
+        "Vida universitaria"
+      ],
+      "body": [
+        {
+          "type": "lead",
+          "text": "La Escuela de Gobierno de la Universidad Adolfo Ibáñez publicó una nota sobre la creación del Club de Economía, Actualidad Política y Sociedad (CEAPS), destacando su origen estudiantil y su objetivo de promover espacios de análisis, debate y participación universitaria."
+        },
+        {
+          "type": "paragraph",
+          "text": "Según la publicación, CEAPS fue impulsado por estudiantes del Magíster en Economía y Políticas Públicas de la UAI, a partir de la inquietud de generar un espacio donde estudiantes y académicos pudieran dialogar sobre temas económicos, políticos y sociales desde distintas perspectivas."
+        },
+        {
+          "type": "paragraph",
+          "text": "La nota presenta al club como una plataforma abierta a la comunidad universitaria, orientada a organizar charlas, conversatorios, talleres y visitas institucionales, además de difundir noticias, análisis y columnas de opinión elaboradas por estudiantes y académicos."
+        },
+        {
+          "type": "paragraph",
+          "text": "Para CEAPS, esta publicación representa un primer reconocimiento institucional del proyecto y una oportunidad para comunicar públicamente su propósito: fortalecer la vida universitaria y contribuir a una comunidad académica más conectada con los desafíos económicos, políticos y sociales del entorno."
+        },
+        {
+          "type": "paragraph",
+          "text": "Esta entrada corresponde a una versión referencial y adaptada para el sitio de CEAPS. La publicación original fue realizada por la Escuela de Gobierno UAI y se encuentra enlazada en la ficha de esta noticia."
+        }
+      ]
+    },
+    {
       "id": "esta-muriendo-la-universidad",
       "type": "opinion",
       "category": "estudiantil",

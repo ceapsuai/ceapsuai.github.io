@@ -81,6 +81,7 @@ function renderSidebar(data, item) {
   addFact(list, "Fecha", formatDate(item.date, { day: "numeric", month: "long", year: "numeric" }));
   if (item.issue) addFact(list, "Edición", item.issue);
   if (item.author?.name) addFact(list, "Autoría", item.author.name);
+  if (item.source?.name) addFact(list, "Fuente", item.source.name);
   if (item.event?.date) addFact(list, "Evento", `${formatDate(item.event.date, { weekday: "long", day: "numeric", month: "long" })}, ${item.event.time}`);
   if (item.deadline) addFact(list, "Cierre", formatDate(item.deadline, { day: "numeric", month: "long", year: "numeric" }));
   summary.append(list);
@@ -94,6 +95,10 @@ function renderSidebar(data, item) {
   if (item.cta) {
     const cta = createElement("a", "button button-primary sidebar-action", item.cta.label);
     cta.href = item.cta.href;
+    if (item.cta.external) {
+      cta.target = "_blank";
+      cta.rel = "noopener noreferrer";
+    }
     target.append(cta);
   }
 }
