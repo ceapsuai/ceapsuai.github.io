@@ -194,8 +194,13 @@ blockquote,
 }
 
 .desktop-nav {
+  display: grid;
   flex: 1 1 auto;
-  justify-content: center;
+  gap: 0.9rem;
+  grid-auto-columns: minmax(0, 1fr);
+  grid-auto-flow: column;
+  justify-content: stretch;
+  min-width: 0;
 }
 
 .desktop-nav a,
@@ -208,6 +213,13 @@ blockquote,
   line-height: 1.45;
   text-align: center;
   text-transform: uppercase;
+}
+
+.desktop-nav a {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-width: 0;
 }
 
 .desktop-nav a:hover,
@@ -1342,6 +1354,35 @@ blockquote,
 
 .author-columns-band {
   background: var(--paper);
+}
+
+@media (max-width: 1040px) {
+  .desktop-nav,
+  .header-cta {
+    display: none;
+  }
+
+  .icon-button {
+    display: inline-flex;
+    position: relative;
+  }
+
+  .menu-open .mobile-nav {
+    display: flex;
+  }
+
+  .menu-open .mobile-cta {
+    display: flex;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .site-footer nav {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
 }
 
 @media (max-width: 980px) {
