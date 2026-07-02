@@ -26,11 +26,11 @@
       "href": "index.html#columnas"
     },
     {
-      "label": "Agenda",
+      "label": "Noticias y agenda",
       "href": "index.html#noticias-eventos"
     },
     {
-      "label": "Papers",
+      "label": "Investigación",
       "href": "index.html#papers"
     },
     {
@@ -62,7 +62,7 @@
     "latest": {
       "kicker": "Últimas publicaciones",
       "title": "Lecturas recientes",
-      "description": "Columnas, noticias, papers, boletines y convocatorias publicados por el club."
+      "description": "Columnas, noticias, investigación, boletines y convocatorias publicados por el club."
     },
     "newsletter": {
       "kicker": "Publicación quincenal",
@@ -96,15 +96,15 @@
     },
     "newsEvents": {
       "kicker": "Vida del club",
-      "title": "Noticias y eventos",
-      "description": "Actividades, anuncios y encuentros organizados por CEAPS.",
+      "title": "Noticias y agenda",
+      "description": "Noticias institucionales, anuncios, actividades y encuentros organizados por CEAPS.",
       "newsTitle": "Noticias",
       "eventsTitle": "Agenda"
     },
     "papers": {
       "kicker": "Investigación",
-      "title": "Papers y documentos",
-      "description": "Selección de trabajos académicos, revisiones de literatura y documentos de discusión."
+      "title": "Investigación",
+      "description": "Papers, minutas, documentos de trabajo, revisiones de literatura y materiales de análisis producidos o seleccionados por CEAPS."
     },
     "opportunities": {
       "kicker": "Convocatorias",
