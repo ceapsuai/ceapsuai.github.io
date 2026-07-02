@@ -113,13 +113,13 @@ blockquote,
 }
 
 .site-header .shell {
-  max-width: 1440px;
+  max-width: 1760px;
 }
 
 .header-inner {
   align-items: center;
   display: flex;
-  gap: 1.6rem;
+  gap: clamp(1.25rem, 1.8vw, 2.2rem);
   justify-content: space-between;
   min-height: 74px;
 }
@@ -194,12 +194,12 @@ blockquote,
 }
 
 .desktop-nav {
-  display: grid;
-  flex: 1 1 auto;
-  gap: 0.9rem;
-  grid-auto-columns: minmax(0, 1fr);
-  grid-auto-flow: column;
-  justify-content: stretch;
+  display: flex;
+  flex: 1 1 720px;
+  gap: clamp(1.2rem, 2vw, 2.55rem);
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 900px;
   min-width: 0;
 }
 
@@ -218,6 +218,7 @@ blockquote,
 .desktop-nav a {
   align-items: center;
   display: flex;
+  flex: 0 1 auto;
   justify-content: center;
   min-width: 0;
 }
@@ -1356,7 +1357,50 @@ blockquote,
   background: var(--paper);
 }
 
-@media (max-width: 1040px) {
+@media (max-width: 1450px) and (min-width: 1281px) {
+  .header-inner {
+    gap: 1rem;
+  }
+
+  .brand {
+    gap: 0.65rem;
+  }
+
+  .university-logo {
+    width: 94px;
+  }
+
+  .brand-mark {
+    height: 40px;
+    width: 40px;
+  }
+
+  .brand-word {
+    font-size: 1.72rem;
+  }
+
+  .brand small {
+    font-size: 0.64rem;
+    letter-spacing: 0.18em;
+  }
+
+  .desktop-nav {
+    max-width: 730px;
+  }
+
+  .desktop-nav a {
+    font-size: 0.68rem;
+    letter-spacing: 0.11em;
+  }
+
+  .header-cta {
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    padding: 0.66rem 0.9rem;
+  }
+}
+
+@media (max-width: 1280px) {
   .desktop-nav,
   .header-cta {
     display: none;
