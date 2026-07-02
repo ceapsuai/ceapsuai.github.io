@@ -205,6 +205,8 @@ blockquote,
   font-size: 0.76rem;
   font-weight: 800;
   letter-spacing: 0.14em;
+  line-height: 1.45;
+  text-align: center;
   text-transform: uppercase;
 }
 
