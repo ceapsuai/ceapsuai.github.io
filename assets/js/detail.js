@@ -38,7 +38,7 @@ function renderDetail(data, item) {
   document.title = `${item.title} | CEAPS`;
   document.querySelector('meta[name="description"]').setAttribute("content", item.summary || item.excerpt || data.site.description);
   const canonical = document.querySelector('link[rel="canonical"]');
-  if (canonical) canonical.href = `${location.origin}${location.pathname}${location.search}`;
+  if (canonical) canonical.href = `${location.origin}/publicaciones/${encodeURIComponent(item.id)}.html`;
 
   const meta = document.querySelector("[data-detail-meta]");
   meta.replaceChildren();

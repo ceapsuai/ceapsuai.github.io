@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://ceapsuai.github.io/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -14,25 +14,25 @@
   </url>
   <url>
     <loc>https://ceapsuai.github.io/autor.html?autor=martin-castillo-jimenez</loc>
-    <lastmod>2026-06-04</lastmod>
+    <lastmod>2026-05-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://ceapsuai.github.io/autor.html?autor=maximiliano-osorio-requena</loc>
-    <lastmod>2026-06-04</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://ceapsuai.github.io/detalle.html?id=estudiantes-uai-crean-club-ceaps</loc>
+    <loc>https://ceapsuai.github.io/publicaciones/estudiantes-uai-crean-club-ceaps.html</loc>
     <lastmod>2026-06-19</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ceapsuai.github.io/detalle.html?id=esta-muriendo-la-universidad</loc>
-    <lastmod>2026-06-01</lastmod>
+    <loc>https://ceapsuai.github.io/publicaciones/esta-muriendo-la-universidad.html</loc>
+    <lastmod>2026-05-23</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>

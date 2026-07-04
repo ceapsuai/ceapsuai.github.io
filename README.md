@@ -6,6 +6,7 @@ Sitio estático para el Club de Economía, Actualidad Política y Sociedad.
 
 - `index.html`: portada del sitio.
 - `detalle.html`: página que muestra el contenido completo según `?id=...`.
+- `publicaciones/`: páginas estáticas generadas para cada publicación.
 - `equipo.html`: página del equipo directivo.
 - `autor.html`: página que lista columnas de opinión por integrante.
 - `data/content.json`: fuente principal de información editable.
@@ -40,8 +41,16 @@ Los tipos disponibles son:
 Los enlaces de detalle se generan automáticamente como:
 
 ```text
-detalle.html?id=ID_DE_LA_PUBLICACION
+/publicaciones/ID_DE_LA_PUBLICACION.html
 ```
+
+Después de editar `data/content.json`, ejecuta:
+
+```bash
+node scripts/prerender.mjs
+```
+
+El script regenera las páginas de `publicaciones/` y actualiza `sitemap.xml`. La página `detalle.html?id=...` queda como enlace legado para compatibilidad.
 
 ## GitHub Pages
 

@@ -1,5 +1,7 @@
 const DATA_URL = new URL("../../data/content.json", import.meta.url);
 
+export { setupMobileMenu } from "./menu.js";
+
 export async function loadSiteData() {
   const response = await fetch(DATA_URL, { cache: "no-cache" });
 
@@ -33,7 +35,7 @@ export function getTypeLabel(data, type) {
 }
 
 export function getItemUrl(item) {
-  return `detalle.html?id=${encodeURIComponent(item.id)}`;
+  return `/publicaciones/${encodeURIComponent(item.id)}.html`;
 }
 
 export function formatDate(dateString, options = {}) {
@@ -108,36 +110,6 @@ export function renderHeader(data) {
       link.href = item.href;
       target.append(link);
     });
-  });
-}
-
-export function setupMobileMenu() {
-  const toggle = document.querySelector("[data-menu-toggle]");
-  const mobileNav = document.querySelector("[data-mobile-nav]");
-
-  if (!toggle || !mobileNav) return;
-
-  const setMenuState = (isOpen) => {
-    toggle.setAttribute("aria-expanded", String(isOpen));
-    toggle.setAttribute("aria-label", isOpen ? "Cerrar menú" : "Abrir menú");
-    document.body.classList.toggle("menu-open", isOpen);
-  };
-
-  toggle.addEventListener("click", () => {
-    setMenuState(toggle.getAttribute("aria-expanded") !== "true");
-  });
-
-  mobileNav.addEventListener("click", (event) => {
-    if (event.target.closest("a")) {
-      setMenuState(false);
-    }
-  });
-
-  document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape" && toggle.getAttribute("aria-expanded") === "true") {
-      setMenuState(false);
-      toggle.focus();
-    }
   });
 }
 
