@@ -47,10 +47,23 @@ Los enlaces de detalle se generan automáticamente como:
 Después de editar `data/content.json`, ejecuta:
 
 ```bash
-node scripts/prerender.mjs
+npm run build
+```
+
+En PowerShell de Windows, si aparece un bloqueo de permisos para `npm.ps1`, usa:
+
+```bash
+npm.cmd run build
 ```
 
 El script regenera las páginas de `publicaciones/` y actualiza `sitemap.xml`. La página `detalle.html?id=...` queda como enlace legado para compatibilidad.
+
+## Flujo recomendado para publicar
+
+1. Edita el contenido en `data/content.json`.
+2. Ejecuta `npm run build`.
+3. Revisa localmente los cambios principales.
+4. Sube los cambios con `git add`, `git commit` y `git push`.
 
 ## GitHub Pages
 

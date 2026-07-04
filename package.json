@@ -1,0 +1,9 @@
+{
+  "name": "ceapsuai.github.io",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sitio estatico del Club de Economia, Actualidad Politica y Sociedad.",
+  "scripts": {
+    "build": "node scripts/prerender.mjs"
+  }
+}
