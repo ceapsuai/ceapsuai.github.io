@@ -29,6 +29,8 @@ function renderAuthorPage(data) {
 
   document.title = `Columnas de opinión de ${authorName} | CEAPS`;
   document.querySelector('meta[name="description"]').setAttribute("content", `Columnas de opinión publicadas por ${authorName} en CEAPS.`);
+  const canonical = document.querySelector('link[rel="canonical"]');
+  if (canonical) canonical.href = `${location.origin}${location.pathname}${location.search}`;
 
   setText("[data-author-title]", `Columnas de opinión de ${authorName}`);
   setText("[data-author-description]", member?.role || columns[0]?.author?.role || "Publicaciones de opinión en CEAPS.");

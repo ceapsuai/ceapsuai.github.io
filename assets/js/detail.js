@@ -37,6 +37,8 @@ async function init() {
 function renderDetail(data, item) {
   document.title = `${item.title} | CEAPS`;
   document.querySelector('meta[name="description"]').setAttribute("content", item.summary || item.excerpt || data.site.description);
+  const canonical = document.querySelector('link[rel="canonical"]');
+  if (canonical) canonical.href = `${location.origin}${location.pathname}${location.search}`;
 
   const meta = document.querySelector("[data-detail-meta]");
   meta.replaceChildren();
