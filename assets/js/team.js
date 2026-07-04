@@ -4,7 +4,7 @@ import {
   loadSiteData,
   renderHeader,
   setupMobileMenu,
-} from "./data.js?v=20260604-final-polish";
+} from "./data.js";
 
 init();
 

@@ -10,7 +10,7 @@ import {
   renderHeader,
   renderTags,
   setupMobileMenu,
-} from "./data.js?v=20260701-editorial-org";
+} from "./data.js";
 
 const state = {
   columnFilter: "todas",
