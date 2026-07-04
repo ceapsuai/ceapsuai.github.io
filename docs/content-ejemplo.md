@@ -156,7 +156,7 @@
       {
         "name": "Maximiliano Osorio Requena",
         "role": "Vicepresidente y Director del departamento de VinculaciÃ³n con el Medio",
-        "image": "assets/img/equipo/vicepresidente.PNG",
+        "image": "assets/img/equipo/vicepresidente.jpg",
         "text": "Encargado de apoyar la coordinaciÃ³n estratÃ©gica del club, fortalecer la gestiÃ³n interna y promover el uso de herramientas analÃ­ticas y computacionales para el estudio de la economÃ­a, la actualidad polÃ­tica y la sociedad.\n\nEstudiante del MagÃ­ster en EconomÃ­a y PolÃ­ticas PÃºblicas de la Universidad Adolfo IbÃ¡Ã±ez.",
         "email": "maxiosorio@alumnos.uai.cl",
         "link": ""
