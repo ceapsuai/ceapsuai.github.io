@@ -9,7 +9,7 @@ Sitio estático para el Club de Economía, Actualidad Política y Sociedad.
 - `equipo.html`: página del equipo directivo.
 - `autor.html`: página que lista columnas de opinión por integrante.
 - `data/content.json`: fuente principal de información editable.
-- `data/content-ejemplo.json`: respaldo del contenido de ejemplo.
+- `docs/content-ejemplo.md`: respaldo documental de contenido ficticio de ejemplo, no publicado.
 - `docs/plantillas-contenido.md`: plantillas para publicar columnas, eventos, noticias, papers, boletines y oportunidades.
 - `assets/js/`: carga de datos, render de portada y detalle.
 - `assets/css/styles.css`: diseño responsive con paleta CEAPS.
@@ -22,7 +22,7 @@ Sitio estático para el Club de Economía, Actualidad Política y Sociedad.
 
 Edita `data/content.json`. Cada publicación debe tener un `id` único, `type`, `title`, `summary`, `date`, `tags` y un arreglo `body`.
 
-La versión activa de `data/content.json` está limpia: no contiene publicaciones ficticias visibles. El contenido de ejemplo quedó respaldado en `data/content-ejemplo.json`.
+La versión activa de `data/content.json` está limpia: no contiene publicaciones ficticias visibles. El contenido de ejemplo quedó respaldado en `docs/content-ejemplo.md` como referencia documental no publicada.
 
 Para crear contenido real sin romper el formato, copia una plantilla desde `docs/plantillas-contenido.md` y pégala dentro del arreglo `"items"` en `data/content.json`.
 

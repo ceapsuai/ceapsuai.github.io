@@ -2,10 +2,10 @@
 
 Este archivo sirve para publicar contenido real sin tocar el diseño de la web. El formato visual lo controlan `index.html`, `detalle.html`, `assets/css/styles.css` y `assets/js/`. Para publicar, normalmente solo debes editar `data/content.json`.
 
-Antes de reemplazar ejemplos, quedó guardado un respaldo en:
+Antes de reemplazar ejemplos, quedó guardado un respaldo documental no publicado en:
 
 ```text
-data/content-ejemplo.json
+docs/content-ejemplo.md
 ```
 
 ## Reglas rápidas
