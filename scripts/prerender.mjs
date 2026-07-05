@@ -7,7 +7,7 @@ const ROOT = process.cwd();
 const CONTENT_PATH = path.join(ROOT, "data", "content.json");
 const OUTPUT_DIR = path.join(ROOT, "publicaciones");
 const SITEMAP_PATH = path.join(ROOT, "sitemap.xml");
-const CSS_VERSION = "20260704-eventos";
+const CSS_VERSION = "20260705-galeria";
 const MENU_VERSION = "20260704-eventos";
 
 const data = JSON.parse(await readFile(CONTENT_PATH, "utf8"));
