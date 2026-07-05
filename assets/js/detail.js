@@ -67,7 +67,8 @@ function renderByline(item) {
   }
 
   if (item.event?.place) {
-    target.append(createElement("span", "", `${item.event.place} · ${item.event.time}`));
+    const time = item.event.time ? ` · ${item.event.time}` : "";
+    target.append(createElement("span", "", `${item.event.place}${time}`));
   }
 }
 
@@ -84,7 +85,10 @@ function renderSidebar(data, item) {
   if (item.issue) addFact(list, "Edición", item.issue);
   if (item.author?.name) addFact(list, "Autoría", item.author.name);
   if (item.source?.name) addFact(list, "Fuente", item.source.name);
-  if (item.event?.date) addFact(list, "Evento", `${formatDate(item.event.date, { weekday: "long", day: "numeric", month: "long" })}, ${item.event.time}`);
+  if (item.event?.date) {
+    const time = item.event.time ? `, ${item.event.time}` : "";
+    addFact(list, "Evento", `${formatDate(item.event.date, { weekday: "long", day: "numeric", month: "long" })}${time}`);
+  }
   if (item.deadline) addFact(list, "Cierre", formatDate(item.deadline, { day: "numeric", month: "long", year: "numeric" }));
   summary.append(list);
 

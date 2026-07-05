@@ -7,8 +7,8 @@ const ROOT = process.cwd();
 const CONTENT_PATH = path.join(ROOT, "data", "content.json");
 const OUTPUT_DIR = path.join(ROOT, "publicaciones");
 const SITEMAP_PATH = path.join(ROOT, "sitemap.xml");
-const CSS_VERSION = "20260701-nav-balance";
-const MENU_VERSION = "20260703-audit";
+const CSS_VERSION = "20260704-eventos";
+const MENU_VERSION = "20260704-eventos";
 
 const data = JSON.parse(await readFile(CONTENT_PATH, "utf8"));
 const items = data.items
@@ -41,6 +41,7 @@ function renderPublicationPage(item) {
   const canonical = `${SITE_URL}${itemUrl(item)}`;
   const description = item.summary || item.excerpt || data.site.description;
   const typeLabel = getTypeLabel(item.type);
+  const imageUrl = item.image ? `${SITE_URL}/${item.image.replace(/^\/+/, "")}` : `${SITE_URL}/assets/img/brand/og-card.png`;
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -48,7 +49,7 @@ function renderPublicationPage(item) {
     description,
     datePublished: item.date,
     mainEntityOfPage: canonical,
-    image: `${SITE_URL}/assets/img/brand/og-card.png`,
+    image: imageUrl,
     publisher: {
       "@type": "Organization",
       name: "CEAPS",
@@ -93,12 +94,12 @@ function renderPublicationPage(item) {
     <meta property="og:url" content="${canonical}">
     <meta property="og:site_name" content="CEAPS">
     <meta property="og:locale" content="es_CL">
-    <meta property="og:image" content="${SITE_URL}/assets/img/brand/og-card.png">
+    <meta property="og:image" content="${escapeAttr(imageUrl)}">
     <meta property="article:published_time" content="${escapeAttr(item.date)}">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="${escapeAttr(item.title)}">
     <meta name="twitter:description" content="${escapeAttr(description)}">
-    <meta name="twitter:image" content="${SITE_URL}/assets/img/brand/og-card.png">
+    <meta name="twitter:image" content="${escapeAttr(imageUrl)}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
@@ -260,9 +261,30 @@ function renderBodyBlocks(blocks = []) {
         const items = (block.items || []).map((item) => `<li>${escapeHtml(item)}</li>`).join("");
         return `<ul>${items}</ul>`;
       }
+      if (block.type === "image") return renderArticleFigure(block);
+      if (block.type === "gallery") {
+        const figures = (block.items || []).map((item) => renderArticleFigure(item)).join("");
+        return `<div class="article-gallery">${figures}</div>`;
+      }
+      if (block.type === "links") {
+        const links = (block.items || [])
+          .map((item) => `<a href="${escapeAttr(item.href)}" target="_blank" rel="noopener noreferrer">${escapeHtml(item.label)}</a>`)
+          .join("");
+        return `<div class="article-link-list">${links}</div>`;
+      }
       return `<p>${escapeHtml(block.text || "")}</p>`;
     })
     .join("\n            ");
+}
+
+function renderArticleFigure(block = {}) {
+  const src = publicationMediaSrc(block.src || block.image || "");
+  const caption = block.caption ? `<figcaption>${escapeHtml(block.caption)}</figcaption>` : "";
+
+  return `<figure class="article-figure">
+              <img src="${escapeAttr(src)}" alt="${escapeAttr(block.alt || "")}" loading="lazy" decoding="async">
+              ${caption}
+            </figure>`;
 }
 
 function renderRelated(item) {
@@ -388,6 +410,11 @@ function siteRootHref(href = "") {
   if (href.startsWith("#")) return `/index.html${href}`;
   if (href.startsWith("/")) return href;
   return `/${href}`;
+}
+
+function publicationMediaSrc(src = "") {
+  if (/^(https?:|data:|\/)/.test(src)) return src;
+  return `../${src}`;
 }
 
 function getTypeLabel(type) {

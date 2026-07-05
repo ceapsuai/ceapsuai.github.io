@@ -1219,6 +1219,58 @@ blockquote,
   padding-left: 1.25rem;
 }
 
+.article-figure {
+  margin: 2rem 0;
+}
+
+.article-figure img {
+  aspect-ratio: 16 / 10;
+  border: 1px solid var(--line-dark);
+  border-radius: 8px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.article-figure figcaption {
+  color: rgba(32, 30, 30, 0.62);
+  font-size: 0.86rem;
+  font-weight: 700;
+  line-height: 1.45;
+  margin-top: 0.65rem;
+}
+
+.article-gallery {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 2rem 0;
+}
+
+.article-gallery .article-figure {
+  margin: 0;
+}
+
+.article-link-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 1.5rem 0 0;
+}
+
+.article-link-list a {
+  border: 1px solid var(--line-dark);
+  border-radius: 6px;
+  color: var(--wine);
+  font-size: 0.9rem;
+  font-weight: 900;
+  padding: 0.62rem 0.8rem;
+}
+
+.article-link-list a:hover {
+  border-color: rgba(32, 30, 30, 0.34);
+  color: var(--ink);
+}
+
 .not-found {
   align-items: center;
   display: flex;
@@ -1515,6 +1567,10 @@ blockquote,
 
   .hero-lede {
     font-size: 1.05rem;
+  }
+
+  .article-gallery {
+    grid-template-columns: 1fr;
   }
 
   .hero-actions {

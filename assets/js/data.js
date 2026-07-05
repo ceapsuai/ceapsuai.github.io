@@ -186,6 +186,49 @@ export function renderBodyBlocks(container, blocks = []) {
       return;
     }
 
+    if (block.type === "image") {
+      container.append(renderArticleFigure(block));
+      return;
+    }
+
+    if (block.type === "gallery") {
+      const gallery = createElement("div", "article-gallery");
+      (block.items || []).forEach((item) => {
+        gallery.append(renderArticleFigure(item));
+      });
+      container.append(gallery);
+      return;
+    }
+
+    if (block.type === "links") {
+      const links = createElement("div", "article-link-list");
+      (block.items || []).forEach((item) => {
+        const link = createElement("a", "", item.label);
+        link.href = item.href;
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
+        links.append(link);
+      });
+      container.append(links);
+      return;
+    }
+
     container.append(createElement("p", "", block.text));
   });
+}
+
+function renderArticleFigure(block) {
+  const figure = createElement("figure", "article-figure");
+  const image = document.createElement("img");
+  image.src = block.src || block.image;
+  image.alt = block.alt || "";
+  image.loading = "lazy";
+  image.decoding = "async";
+  figure.append(image);
+
+  if (block.caption) {
+    figure.append(createElement("figcaption", "", block.caption));
+  }
+
+  return figure;
 }

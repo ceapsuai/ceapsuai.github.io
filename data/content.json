@@ -56,7 +56,9 @@
         "href": "#sobre"
       }
     ],
-    "featuredIds": []
+    "featuredIds": [
+      "entre-washington-beijing-competencia-geoeconomica"
+    ]
   },
   "sections": {
     "latest": {
@@ -269,6 +271,100 @@
     "copyright": "CEAPS · Club de Economía, Actualidad Política y Sociedad."
   },
   "items": [
+    {
+      "id": "entre-washington-beijing-competencia-geoeconomica",
+      "type": "event",
+      "category": "conversatorio",
+      "title": "Entre Washington y Beijing: Chile frente a la competencia geoeconómica global",
+      "summary": "CEAPS realizó su primer conversatorio con el profesor Fernando Alvarado, de la Escuela de Gobierno UAI, para analizar la competencia geoeconómica global y sus implicancias para Chile.",
+      "excerpt": "Un encuentro para discutir el orden internacional, la geoeconomía, la tecnología, la inteligencia artificial y el lugar de América Latina frente a la rivalidad entre Estados Unidos y China.",
+      "date": "2026-06-23",
+      "image": "assets/img/eventos/entre-washington-beijing-conversatorio.jpg",
+      "event": {
+        "date": "2026-06-23",
+        "place": "Universidad Adolfo Ibáñez"
+      },
+      "cta": {
+        "label": "Ver registro en LinkedIn",
+        "href": "https://www.linkedin.com/posts/ceaps-geoeconomaeda-uai-ugcPost-7478964234404560896-rEjH/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADimmj4BUmo7EjhDV2nRVofglhAHBde59pc",
+        "external": true
+      },
+      "tags": [
+        "Geoeconomía",
+        "Estados Unidos",
+        "China",
+        "Chile",
+        "Asia-Pacífico"
+      ],
+      "body": [
+        {
+          "type": "lead",
+          "text": "El martes 23 de junio de 2026, CEAPS realizó su primer conversatorio: “Entre Washington y Beijing: Chile frente a la competencia geoeconómica global”. La actividad buscó abrir una conversación universitaria sobre los cambios del orden internacional y los desafíos que enfrenta Chile en un escenario marcado por la rivalidad entre Estados Unidos y China."
+        },
+        {
+          "type": "paragraph",
+          "text": "El encuentro contó con la participación del profesor Fernando Alvarado, de la Escuela de Gobierno de la Universidad Adolfo Ibáñez, quien inició la jornada con una exposición sobre el panorama actual de la competencia geoeconómica global."
+        },
+        {
+          "type": "paragraph",
+          "text": "Luego, la actividad pasó a una modalidad de conversatorio guiada por Martín Castillo Jiménez, presidente de CEAPS. La conversación abordó distintos puntos clave para entender la disputa entre Washington y Beijing, sus efectos sobre América Latina y las preguntas estratégicas que se abren para Chile."
+        },
+        {
+          "type": "heading",
+          "text": "Ejes de la conversación"
+        },
+        {
+          "type": "list",
+          "items": [
+            "El reordenamiento del sistema internacional y la competencia entre grandes potencias.",
+            "La geoeconomía como dimensión central de la política internacional contemporánea.",
+            "El rol de la tecnología, la inteligencia artificial y los sectores estratégicos.",
+            "La posición de América Latina frente a la rivalidad entre Estados Unidos y China.",
+            "Los desafíos de Chile ante ambas potencias y las decisiones que deberá enfrentar hacia el futuro."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Para CEAPS, este primer conversatorio marca el inicio de una agenda de actividades orientada a conectar actualidad, evidencia y discusión académica. La instancia permitió reunir a estudiantes y docentes en torno a una pregunta central para la vida pública: cómo comprender los cambios globales y qué tipo de respuestas puede construir Chile desde su posición en el mundo."
+        },
+        {
+          "type": "gallery",
+          "items": [
+            {
+              "src": "assets/img/eventos/entre-washington-beijing-exposicion.jpg",
+              "alt": "Fernando Alvarado exponiendo frente a estudiantes durante el conversatorio de CEAPS",
+              "caption": "El profesor Fernando Alvarado abrió la actividad con una exposición sobre la competencia geoeconómica global."
+            },
+            {
+              "src": "assets/img/eventos/entre-washington-beijing-conversatorio.jpg",
+              "alt": "Fernando Alvarado y Martín Castillo durante el conversatorio de CEAPS",
+              "caption": "La segunda parte del encuentro se desarrolló en formato de conversación guiada por Martín Castillo Jiménez."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Registro en redes"
+        },
+        {
+          "type": "paragraph",
+          "text": "La experiencia fue difundida por CEAPS en sus canales institucionales, con un resumen ex post de la actividad y de los principales temas discutidos."
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "label": "Ver publicación en LinkedIn",
+              "href": "https://www.linkedin.com/posts/ceaps-geoeconomaeda-uai-ugcPost-7478964234404560896-rEjH/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADimmj4BUmo7EjhDV2nRVofglhAHBde59pc"
+            },
+            {
+              "label": "Ver publicación en Instagram",
+              "href": "https://www.instagram.com/p/DaWWmSOkdKc/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+            }
+          ]
+        }
+      ]
+    },
     {
       "id": "estudiantes-uai-crean-club-ceaps",
       "type": "news",

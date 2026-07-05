@@ -269,7 +269,8 @@ function renderNewsEvents(data) {
   eventItems.forEach((item) => {
     const eventItem = createListItem(item, data);
     if (item.event?.date) {
-      eventItem.append(createElement("strong", "event-date", `${formatDate(item.event.date, { weekday: "short", day: "numeric", month: "short" })} · ${item.event.time}`));
+      const time = item.event.time ? ` · ${item.event.time}` : "";
+      eventItem.append(createElement("strong", "event-date", `${formatDate(item.event.date, { weekday: "short", day: "numeric", month: "short" })}${time}`));
     }
     eventsTarget.append(eventItem);
   });
