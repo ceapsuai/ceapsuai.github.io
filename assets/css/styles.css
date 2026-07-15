@@ -143,6 +143,7 @@ blockquote,
   background: #171515;
   color: var(--white);
   display: inline-flex;
+  flex: 0 0 44px;
   font-family: var(--serif);
   font-size: 0.58rem;
   font-weight: 900;
