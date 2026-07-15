@@ -1432,6 +1432,7 @@ blockquote,
   }
 
   .brand-mark {
+    flex-basis: 40px;
     height: 40px;
     width: 40px;
   }
@@ -1661,6 +1662,7 @@ blockquote,
   }
 
   .brand-mark {
+    flex-basis: 38px;
     height: 38px;
     width: 38px;
   }
