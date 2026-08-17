@@ -26,7 +26,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/styles.css?v=20260705-galeria">
+    <link rel="stylesheet" href="assets/css/styles.css?v=20260817-columnas">
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -43,7 +43,7 @@
         }
       }
     </script>
-    <script type="module" src="assets/js/app.js?v=20260704-eventos"></script>
+    <script type="module" src="assets/js/app.js?v=20260817-columnas"></script>
   </head>
   <body>
     <a class="skip-link" href="#contenido">Saltar al contenido</a>
@@ -155,14 +155,26 @@
           </div>
           <div class="segmented-control" role="tablist" aria-label="Filtrar columnas" data-column-filters></div>
         </div>
-        <div class="shell card-grid columns-grid" data-columns-grid></div>
+        <div class="shell content-carousel" data-columns-carousel>
+          <div class="carousel-controls" aria-label="Navegar por las columnas recientes">
+            <button class="carousel-button" type="button" aria-label="Ver columnas más recientes" data-carousel-previous>←</button>
+            <button class="carousel-button" type="button" aria-label="Ver columnas anteriores" data-carousel-next>→</button>
+          </div>
+          <div class="carousel-track columns-grid" data-columns-grid tabindex="0" aria-label="Columnas recientes"></div>
+        </div>
         <div class="shell columnists-block">
           <div class="columnists-heading">
             <p class="eyebrow" data-columnists-kicker></p>
             <h3 data-columnists-title></h3>
             <p data-columnists-description></p>
           </div>
-          <div class="columnists-grid" data-columnists-grid></div>
+          <div class="content-carousel" data-columnists-carousel>
+            <div class="carousel-controls" aria-label="Navegar por los columnistas">
+              <button class="carousel-button" type="button" aria-label="Ver columnistas anteriores" data-carousel-previous>←</button>
+              <button class="carousel-button" type="button" aria-label="Ver más columnistas" data-carousel-next>→</button>
+            </div>
+            <div class="carousel-track columnists-grid" data-columnists-grid tabindex="0" aria-label="Columnistas de CEAPS"></div>
+          </div>
         </div>
       </section>
 

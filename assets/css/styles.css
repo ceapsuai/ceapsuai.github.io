@@ -571,6 +571,67 @@ blockquote,
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.content-carousel {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.carousel-controls {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+
+.carousel-button {
+  align-items: center;
+  background: var(--white);
+  border: 1px solid var(--line-dark);
+  border-radius: 50%;
+  color: var(--ink);
+  cursor: pointer;
+  display: inline-flex;
+  flex: 0 0 40px;
+  font-size: 1.1rem;
+  height: 40px;
+  justify-content: center;
+  padding: 0;
+  transition: background 180ms ease, border-color 180ms ease, color 180ms ease;
+  width: 40px;
+}
+
+.carousel-button:hover:not(:disabled),
+.carousel-button:focus-visible {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--gold);
+}
+
+.carousel-button:disabled {
+  cursor: default;
+  opacity: 0.28;
+}
+
+.carousel-track {
+  display: grid;
+  gap: 1rem;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(285px, calc((100% - 2rem) / 3));
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  padding: 0.15rem 0 0.65rem;
+  scroll-behavior: smooth;
+  scroll-snap-type: inline mandatory;
+  scrollbar-width: none;
+}
+
+.carousel-track::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-track > * {
+  scroll-snap-align: start;
+}
+
 .content-card,
 .list-item,
 .paper-card,
@@ -812,9 +873,7 @@ blockquote,
 }
 
 .columnists-grid {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-auto-columns: minmax(300px, calc((100% - 2rem) / 3));
 }
 
 .columnist-card {
@@ -834,7 +893,14 @@ blockquote,
 }
 
 .columnist-avatar {
+  overflow: hidden;
   margin-top: 0.1rem;
+}
+
+.columnist-avatar img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
 }
 
 .columnist-copy {
@@ -1528,10 +1594,14 @@ blockquote,
 
   .quick-grid,
   .card-grid,
-  .columnists-grid,
   .org-grid,
   .team-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .carousel-track,
+  .columnists-grid {
+    grid-auto-columns: minmax(280px, calc((100% - 1rem) / 2));
   }
 
   .org-flow-grid {
@@ -1589,12 +1659,16 @@ blockquote,
 
   .quick-grid,
   .card-grid,
-  .columnists-grid,
   .paper-grid,
   .org-grid,
   .org-flow-grid,
   .team-grid {
     grid-template-columns: 1fr;
+  }
+
+  .carousel-track,
+  .columnists-grid {
+    grid-auto-columns: min(84vw, 320px);
   }
 
   .org-name-list {

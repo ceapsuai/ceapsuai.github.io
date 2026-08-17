@@ -272,6 +272,52 @@
   },
   "items": [
     {
+      "id": "ciencias-humanas-y-areas-prioritarias",
+      "type": "opinion",
+      "category": "academica",
+      "title": "Ciencias humanas y áreas prioritarias",
+      "summary": "Una reflexión sobre el valor público de las ciencias sociales y las humanidades frente a la definición de áreas prioritarias para el financiamiento de la investigación.",
+      "excerpt": "Las ciencias humanas pueden escapar a las métricas tradicionales de utilidad, pero son fundamentales para orientar y dar sentido a la vida individual y en comunidad.",
+      "date": "2026-08-17",
+      "author": {
+        "id": "alvaro-munoz-ferrer",
+        "name": "Álvaro Muñoz Ferrer",
+        "role": "Doctor en Filosofía",
+        "initials": "AM"
+      },
+      "tags": [
+        "Humanidades",
+        "Ciencias sociales",
+        "Investigación"
+      ],
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Señor Director:"
+        },
+        {
+          "type": "lead",
+          "text": "A propósito de las “áreas prioritarias” definidas recientemente por ANID, ha surgido un debate en torno a la priorización de fondos para determinadas disciplinas en detrimento de las ciencias sociales y las humanidades."
+        },
+        {
+          "type": "paragraph",
+          "text": "Al respecto, una pregunta legítima en esta discusión es para qué sirven las denominadas ciencias humanas y, en consecuencia, si vale la pena financiarlas con fondos públicos. Un modo científico de saber la función de algo es eliminándolo para así observar el efecto que produce su ausencia. Por ejemplo, conocemos la utilidad del agua para una planta porque, si no la regamos, ella muere."
+        },
+        {
+          "type": "paragraph",
+          "text": "Con las ciencias humanas no es necesario crear escenarios ficticios: la historia es elocuente. Sabemos las consecuencias de un avance tecnológico que olvida a la filosofía moral y conocemos el impacto de formas de vida que ignoran sus efectos sobre la salud mental, por mencionar apenas dos ejemplos."
+        },
+        {
+          "type": "paragraph",
+          "text": "En tal sentido, las ciencias sociales y las humanidades muchas veces escapan a las métricas tradicionales de utilidad, pero son fundamentales, o acaso “prioritarias”, para encuadrar, orientar y dar sentido a la vida individual y en comunidad."
+        },
+        {
+          "type": "paragraph",
+          "text": "Texto republicado en CEAPS con autorización del autor."
+        }
+      ]
+    },
+    {
       "id": "entre-washington-beijing-competencia-geoeconomica",
       "type": "event",
       "category": "conversatorio",

@@ -159,17 +159,20 @@ function renderColumnFilters(data) {
 function renderColumnGrid(data) {
   const target = document.querySelector("[data-columns-grid]");
   target.replaceChildren();
+  target.scrollLeft = 0;
 
   const items = getItems(data, { type: "opinion" })
     .filter((item) => state.columnFilter === "todas" || item.category === state.columnFilter)
-    .slice(0, 8);
+    .slice(0, 20);
 
   if (items.length === 0) {
     target.append(createEmptyState("Columnas próximamente", "Las columnas estudiantiles y académicas se publicarán aquí."));
+    setupCarousel(document.querySelector("[data-columns-carousel]"));
     return;
   }
 
   items.forEach((item) => target.append(createCard(item, data, { variant: "opinion-card" })));
+  setupCarousel(document.querySelector("[data-columns-carousel]"));
 }
 
 function renderColumnists(data) {
@@ -191,7 +194,7 @@ function renderColumnists(data) {
     card.href = `autor.html?autor=${encodeURIComponent(person.id)}`;
     card.setAttribute("aria-label", `Ver columnas de ${person.name}`);
 
-    const avatar = createElement("span", "avatar columnist-avatar", person.initials);
+    const avatar = createColumnistAvatar(person);
     const copy = createElement("div", "columnist-copy");
     copy.append(createElement("span", "columnist-count", `${person.count} ${person.count === 1 ? "columna" : "columnas"}`));
     copy.append(createElement("h4", "", person.name));
@@ -204,6 +207,8 @@ function renderColumnists(data) {
     card.append(avatar, copy);
     target.append(card);
   });
+
+  setupCarousel(document.querySelector("[data-columnists-carousel]"));
 }
 
 function getColumnists(data) {
@@ -222,6 +227,7 @@ function getColumnists(data) {
         name: member?.name || item.author.name,
         role: item.author.role || member?.role || "Columnista CEAPS",
         initials: item.author.initials || createInitials(item.author.name),
+        image: item.author.image || "",
         count: 0,
         latestTitle: "",
         latestDate: "",
@@ -237,9 +243,55 @@ function getColumnists(data) {
   });
 
   return Array.from(people.values()).sort((a, b) => {
-    if (b.count !== a.count) return b.count - a.count;
-    return b.latestDate.localeCompare(a.latestDate);
+    const dateComparison = b.latestDate.localeCompare(a.latestDate);
+    if (dateComparison !== 0) return dateComparison;
+    return a.name.localeCompare(b.name, "es");
   });
+}
+
+function createColumnistAvatar(person) {
+  const avatar = createElement("span", "avatar columnist-avatar", person.image ? "" : person.initials);
+
+  if (person.image) {
+    const image = document.createElement("img");
+    image.src = person.image;
+    image.alt = "";
+    image.loading = "lazy";
+    image.decoding = "async";
+    avatar.append(image);
+  }
+
+  return avatar;
+}
+
+function setupCarousel(root) {
+  if (!root) return;
+
+  const track = root.querySelector(".carousel-track");
+  const previous = root.querySelector("[data-carousel-previous]");
+  const next = root.querySelector("[data-carousel-next]");
+  if (!track || !previous || !next) return;
+
+  const updateControls = () => {
+    const maxScroll = Math.max(0, track.scrollWidth - track.clientWidth);
+    previous.disabled = track.scrollLeft <= 2;
+    next.disabled = track.scrollLeft >= maxScroll - 2;
+  };
+
+  const move = (direction) => {
+    const card = track.firstElementChild;
+    const gap = Number.parseFloat(getComputedStyle(track).columnGap || getComputedStyle(track).gap) || 16;
+    const distance = card ? card.getBoundingClientRect().width + gap : track.clientWidth * 0.85;
+    track.scrollBy({ left: direction * distance, behavior: "smooth" });
+  };
+
+  previous.onclick = () => move(-1);
+  next.onclick = () => move(1);
+  track.onscroll = updateControls;
+  root.carouselResizeObserver?.disconnect();
+  root.carouselResizeObserver = new ResizeObserver(updateControls);
+  root.carouselResizeObserver.observe(track);
+  requestAnimationFrame(updateControls);
 }
 
 function renderNewsEvents(data) {
