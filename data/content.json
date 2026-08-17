@@ -270,6 +270,22 @@
   "footer": {
     "copyright": "CEAPS · Club de Economía, Actualidad Política y Sociedad."
   },
+  "authors": [
+    {
+      "id": "alvaro-munoz-ferrer",
+      "name": "Álvaro Muñoz Ferrer",
+      "role": "Doctor en Filosofía",
+      "image": "assets/img/columnistas/alvaro-munoz-ferrer.png",
+      "bio": "Doctor en Filosofía y columnista de CEAPS. Sus textos abordan el lugar de las humanidades, la filosofía y el conocimiento en la vida pública."
+    },
+    {
+      "id": "martin-castillo-jimenez",
+      "name": "Martín Castillo Jiménez",
+      "role": "Presidente y cofundador de CEAPS",
+      "image": "assets/img/equipo/presidente.jpeg",
+      "bio": "Estudiante de Ingeniería Comercial y del Magíster en Economía y Políticas Públicas de la Universidad Adolfo Ibáñez. Sus intereses se concentran en economía política, políticas públicas, relaciones internacionales y Asia-Pacífico."
+    }
+  ],
   "items": [
     {
       "id": "ciencias-humanas-y-areas-prioritarias",
@@ -278,7 +294,7 @@
       "title": "Ciencias humanas y áreas prioritarias",
       "summary": "Una reflexión sobre el valor público de las ciencias sociales y las humanidades frente a la definición de áreas prioritarias para el financiamiento de la investigación.",
       "excerpt": "Las ciencias humanas pueden escapar a las métricas tradicionales de utilidad, pero son fundamentales para orientar y dar sentido a la vida individual y en comunidad.",
-      "date": "2026-08-17",
+      "date": "2026-08-07",
       "author": {
         "id": "alvaro-munoz-ferrer",
         "name": "Álvaro Muñoz Ferrer",

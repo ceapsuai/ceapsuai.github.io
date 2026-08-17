@@ -1,11 +1,12 @@
 import {
   createCard,
   createElement,
+  getAuthorProfile,
   getItems,
   loadSiteData,
   renderHeader,
   setupMobileMenu,
-} from "./data.js";
+} from "./data.js?v=20260817-autores";
 
 init();
 
@@ -25,15 +26,29 @@ function renderAuthorPage(data) {
   const members = data.teamPage?.members || [];
   const member = members.find((person) => person.authorId === authorId || slugify(person.name) === authorId);
   const columns = getItems(data, { type: "opinion" }).filter((item) => matchesAuthor(item, authorId, member));
-  const authorName = member?.name || columns[0]?.author?.name || "Autor no encontrado";
+  const profile = getAuthorProfile(data, authorId) || member || columns[0]?.author;
+  const authorName = profile?.name || "Autor no encontrado";
+  const description = profile?.bio || `Columnas de opinión publicadas por ${authorName} en CEAPS.`;
+  const role = profile?.role || columns[0]?.author?.role || "Columnista CEAPS";
 
-  document.title = `Columnas de opinión de ${authorName} | CEAPS`;
-  document.querySelector('meta[name="description"]').setAttribute("content", `Columnas de opinión publicadas por ${authorName} en CEAPS.`);
+  document.title = `${authorName} | Columnistas CEAPS`;
+  updateMeta('meta[name="description"]', "content", description);
+  updateMeta('meta[property="og:title"]', "content", `${authorName} | Columnistas CEAPS`);
+  updateMeta('meta[property="og:description"]', "content", description);
+  updateMeta('meta[name="twitter:title"]', "content", `${authorName} | Columnistas CEAPS`);
+  updateMeta('meta[name="twitter:description"]', "content", description);
   const canonical = document.querySelector('link[rel="canonical"]');
   if (canonical) canonical.href = `${location.origin}${location.pathname}${location.search}`;
+  updateMeta('meta[property="og:url"]', "content", `${location.origin}${location.pathname}${location.search}`);
 
-  setText("[data-author-title]", `Columnas de opinión de ${authorName}`);
-  setText("[data-author-description]", member?.role || columns[0]?.author?.role || "Publicaciones de opinión en CEAPS.");
+  setText("[data-author-title]", authorName);
+  setText("[data-author-role]", role);
+  setText("[data-author-bio]", description);
+  setText(
+    "[data-author-columns-description]",
+    `${columns.length} ${columns.length === 1 ? "columna publicada" : "columnas publicadas"} en CEAPS.`
+  );
+  renderAuthorPhoto(profile, authorName);
 
   const target = document.querySelector("[data-author-grid]");
   target.replaceChildren();
@@ -44,6 +59,20 @@ function renderAuthorPage(data) {
   }
 
   columns.forEach((item) => target.append(createCard(item, data)));
+}
+
+function renderAuthorPhoto(profile, authorName) {
+  const wrapper = document.querySelector("[data-author-photo-wrapper]");
+  const image = document.querySelector("[data-author-photo]");
+  if (!wrapper || !image || !profile?.image) return;
+
+  image.src = profile.image;
+  image.alt = `Retrato de ${authorName}`;
+  wrapper.hidden = false;
+
+  const absoluteImage = new URL(profile.image, location.href).href;
+  updateMeta('meta[property="og:image"]', "content", absoluteImage);
+  updateMeta('meta[name="twitter:image"]', "content", absoluteImage);
 }
 
 function matchesAuthor(item, authorId, member) {
@@ -84,4 +113,9 @@ function renderError(error) {
 function setText(selector, value) {
   const node = document.querySelector(selector);
   if (node) node.textContent = value || "";
+}
+
+function updateMeta(selector, attribute, value) {
+  const node = document.querySelector(selector);
+  if (node) node.setAttribute(attribute, value);
 }

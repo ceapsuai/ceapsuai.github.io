@@ -1,8 +1,11 @@
 import {
   createCard,
+  createAuthorAvatar,
   createElement,
   formatDate,
   getItemById,
+  getAuthorProfile,
+  getAuthorUrl,
   getItems,
   getTypeLabel,
   loadSiteData,
@@ -10,7 +13,7 @@ import {
   renderHeader,
   renderTags,
   setupMobileMenu,
-} from "./data.js";
+} from "./data.js?v=20260817-autores";
 
 init();
 
@@ -48,20 +51,23 @@ function renderDetail(data, item) {
   setText("[data-detail-title]", item.title);
   setText("[data-detail-summary]", item.summary || item.excerpt);
 
-  renderByline(item);
+  renderByline(data, item);
   renderSidebar(data, item);
   renderBodyBlocks(document.querySelector("[data-detail-body]"), item.body);
   renderRelated(data, item);
 }
 
-function renderByline(item) {
+function renderByline(data, item) {
   const target = document.querySelector("[data-detail-byline]");
   target.replaceChildren();
 
   if (item.author?.name) {
-    const author = createElement("div", "author-line");
-    author.append(createElement("span", "avatar", item.author.initials || item.author.name.slice(0, 2)));
-    const text = createElement("span", "", `${item.author.name} · ${item.author.role}`);
+    const profile = getAuthorProfile(data, item.author) || item.author;
+    const author = createElement("a", "author-line author-profile-link");
+    author.href = getAuthorUrl(profile);
+    author.setAttribute("aria-label", `Ver perfil y columnas de ${profile.name}`);
+    author.append(createAuthorAvatar(data, profile));
+    const text = createElement("span", "", `${profile.name} · ${profile.role || item.author.role || "Columnista CEAPS"}`);
     author.append(text);
     target.append(author);
   }

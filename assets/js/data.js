@@ -38,6 +38,41 @@ export function getItemUrl(item) {
   return `/publicaciones/${encodeURIComponent(item.id)}.html`;
 }
 
+export function getAuthorUrl(author) {
+  const id = typeof author === "string" ? author : author?.id;
+  return id ? `/autor.html?autor=${encodeURIComponent(id)}` : "";
+}
+
+export function getAuthorProfile(data, author) {
+  if (!author) return null;
+
+  const id = typeof author === "string" ? author : author.id;
+  const name = typeof author === "string" ? "" : author.name;
+  const profile = (data.authors || []).find((person) => person.id === id || person.name === name);
+
+  return profile || (typeof author === "string" ? null : author);
+}
+
+export function createAuthorAvatar(data, author, className = "") {
+  const profile = getAuthorProfile(data, author) || author;
+  const avatar = createElement(
+    "span",
+    `avatar ${className}`.trim(),
+    profile?.image ? "" : profile?.initials || createInitials(profile?.name || "CEAPS")
+  );
+
+  if (profile?.image) {
+    const image = document.createElement("img");
+    image.src = profile.image;
+    image.alt = "";
+    image.loading = "lazy";
+    image.decoding = "async";
+    avatar.append(image);
+  }
+
+  return avatar;
+}
+
 export function formatDate(dateString, options = {}) {
   if (!dateString) return "";
 
@@ -129,7 +164,7 @@ export function createCard(item, data, options = {}) {
 
   if (item.author?.name) {
     const author = createElement("div", "card-author");
-    author.append(createElement("span", "avatar", item.author.initials || item.author.name.slice(0, 2)));
+    author.append(createAuthorAvatar(data, item.author));
     const authorText = createElement("span", "", item.author.name);
     author.append(authorText);
     card.append(author);
@@ -140,6 +175,16 @@ export function createCard(item, data, options = {}) {
   }
 
   return card;
+}
+
+function createInitials(name) {
+  return name
+    .split(/\s+/)
+    .filter(Boolean)
+    .slice(0, 2)
+    .map((part) => part[0])
+    .join("")
+    .toUpperCase();
 }
 
 export function createListItem(item, data) {

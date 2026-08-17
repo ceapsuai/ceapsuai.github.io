@@ -764,7 +764,25 @@ blockquote,
   font-weight: 900;
   height: 38px;
   justify-content: center;
+  overflow: hidden;
   width: 38px;
+}
+
+.avatar img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.author-profile-link {
+  color: inherit;
+  max-width: max-content;
+  transition: color 180ms ease;
+}
+
+.author-profile-link:hover,
+.author-profile-link:focus-visible {
+  color: var(--gold);
 }
 
 .newsletter-layout,
@@ -1484,6 +1502,73 @@ blockquote,
   background: var(--paper);
 }
 
+.author-intro {
+  padding-bottom: 3.5rem;
+}
+
+.author-profile-layout {
+  align-items: center;
+  display: grid;
+  gap: 2.25rem;
+  grid-template-columns: 200px minmax(0, 760px);
+}
+
+.author-profile-photo {
+  aspect-ratio: 1;
+  border: 1px solid rgba(5, 5, 5, 0.2);
+  border-radius: 50%;
+  margin: 0;
+  overflow: hidden;
+  width: 200px;
+}
+
+.author-profile-photo img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.author-profile-copy {
+  min-width: 0;
+}
+
+.author-profile-copy .author-profile-role {
+  color: var(--wine);
+  font-size: 0.92rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  margin-top: 0.8rem;
+  text-transform: uppercase;
+}
+
+.author-profile-copy .author-profile-bio {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-top: 1rem;
+  max-width: 720px;
+}
+
+.author-archive-heading {
+  margin-bottom: 1.75rem;
+  max-width: 720px;
+}
+
+.author-archive-heading h2 {
+  font-family: var(--serif);
+  font-size: 2.5rem;
+  line-height: 1.08;
+  margin: 0;
+}
+
+.author-archive-heading p:not(.eyebrow) {
+  color: rgba(32, 30, 30, 0.68);
+  margin: 0.7rem 0 0;
+}
+
+.author-columns-grid {
+  align-items: stretch;
+}
+
 @media (max-width: 1450px) and (min-width: 1281px) {
   .header-inner {
     gap: 1rem;
@@ -1647,6 +1732,19 @@ blockquote,
 
   .hero-lede {
     font-size: 1.05rem;
+  }
+
+  .author-profile-layout {
+    gap: 1.4rem;
+    grid-template-columns: 1fr;
+  }
+
+  .author-profile-photo {
+    width: 150px;
+  }
+
+  .team-intro .author-profile-copy h1 {
+    font-size: 2.7rem;
   }
 
   .article-gallery {

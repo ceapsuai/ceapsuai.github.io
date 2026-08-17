@@ -26,8 +26,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/styles.css?v=20260705-galeria">
-    <script type="module" src="assets/js/author.js?v=20260704-eventos"></script>
+    <link rel="stylesheet" href="assets/css/styles.css?v=20260817-autores">
+    <script type="module" src="assets/js/author.js?v=20260817-autores"></script>
   </head>
   <body class="author-page">
     <a class="skip-link" href="#contenido">Saltar al contenido</a>
@@ -60,15 +60,30 @@
     <main id="contenido">
       <section class="team-intro author-intro">
         <div class="shell">
-          <a class="back-link dark-back-link" href="equipo.html">Volver al equipo</a>
-          <p class="eyebrow">Columnas de opinión</p>
-          <h1 data-author-title></h1>
-          <p data-author-description></p>
+          <a class="back-link dark-back-link" href="index.html#columnas">Volver a columnas</a>
+          <div class="author-profile-layout">
+            <figure class="author-profile-photo" data-author-photo-wrapper hidden>
+              <img data-author-photo src="" alt="">
+            </figure>
+            <div class="author-profile-copy">
+              <p class="eyebrow">Perfil editorial</p>
+              <h1 data-author-title></h1>
+              <p class="author-profile-role" data-author-role></p>
+              <p class="author-profile-bio" data-author-bio></p>
+            </div>
+          </div>
         </div>
       </section>
 
       <section class="content-band author-columns-band">
-        <div class="shell card-grid" data-author-grid></div>
+        <div class="shell">
+          <div class="author-archive-heading">
+            <p class="eyebrow">Archivo editorial</p>
+            <h2>Columnas publicadas</h2>
+            <p data-author-columns-description></p>
+          </div>
+          <div class="card-grid author-columns-grid" data-author-grid></div>
+        </div>
       </section>
     </main>
 

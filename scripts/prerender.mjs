@@ -7,7 +7,7 @@ const ROOT = process.cwd();
 const CONTENT_PATH = path.join(ROOT, "data", "content.json");
 const OUTPUT_DIR = path.join(ROOT, "publicaciones");
 const SITEMAP_PATH = path.join(ROOT, "sitemap.xml");
-const CSS_VERSION = "20260817-columnas";
+const CSS_VERSION = "20260817-autores";
 const MENU_VERSION = "20260704-eventos";
 
 const data = JSON.parse(await readFile(CONTENT_PATH, "utf8"));
@@ -62,9 +62,12 @@ function renderPublicationPage(item) {
   };
 
   if (item.author?.name) {
+    const profile = getAuthorProfile(item.author);
     jsonLd.author = {
       "@type": "Person",
-      name: item.author.name,
+      name: profile.name,
+      ...(profile.id ? { url: `${SITE_URL}/autor.html?autor=${encodeURIComponent(profile.id)}` } : {}),
+      ...(profile.image ? { image: `${SITE_URL}/${profile.image.replace(/^\/+/, "")}` } : {}),
     };
   } else if (item.source?.name) {
     jsonLd.author = {
@@ -204,9 +207,15 @@ function renderByline(item) {
   const parts = [];
 
   if (item.author?.name) {
-    const initials = item.author.initials || item.author.name.slice(0, 2);
-    const role = item.author.role ? ` · ${item.author.role}` : "";
-    parts.push(`<div class="author-line"><span class="avatar">${escapeHtml(initials)}</span><span>${escapeHtml(item.author.name + role)}</span></div>`);
+    const profile = getAuthorProfile(item.author);
+    const role = profile.role ? ` · ${profile.role}` : "";
+    const href = profile.id ? `/autor.html?autor=${encodeURIComponent(profile.id)}` : "";
+    const content = `${renderAuthorAvatar(profile)}<span>${escapeHtml(profile.name + role)}</span>`;
+    parts.push(
+      href
+        ? `<a class="author-line author-profile-link" href="${escapeAttr(href)}" aria-label="Ver perfil y columnas de ${escapeAttr(profile.name)}">${content}</a>`
+        : `<div class="author-line">${content}</div>`
+    );
   }
 
   if (item.event?.place) {
@@ -308,8 +317,9 @@ ${cards}
 }
 
 function renderCard(item) {
-  const author = item.author?.name
-    ? `<div class="card-author"><span class="avatar">${escapeHtml(item.author.initials || item.author.name.slice(0, 2))}</span><span>${escapeHtml(item.author.name)}</span></div>`
+  const profile = item.author?.name ? getAuthorProfile(item.author) : null;
+  const author = profile
+    ? `<div class="card-author">${renderAuthorAvatar(profile)}<span>${escapeHtml(profile.name)}</span></div>`
     : "";
   const tags = item.tags?.length ? renderTags(item.tags.slice(0, 3)) : "";
 
@@ -376,8 +386,8 @@ ${urls
 function authorIds() {
   const ids = new Set();
 
-  for (const member of data.teamPage?.members || []) {
-    if (member.authorId) ids.add(member.authorId);
+  for (const author of data.authors || []) {
+    if (author.id) ids.add(author.id);
   }
 
   for (const item of items) {
@@ -385,6 +395,30 @@ function authorIds() {
   }
 
   return Array.from(ids).sort();
+}
+
+function getAuthorProfile(author) {
+  if (!author) return {};
+  return (data.authors || []).find((profile) => profile.id === author.id || profile.name === author.name) || author;
+}
+
+function renderAuthorAvatar(author) {
+  if (author.image) {
+    return `<span class="avatar"><img src="${escapeAttr(publicationMediaSrc(author.image))}" alt="" loading="lazy" decoding="async"></span>`;
+  }
+
+  const initials = author.initials || createInitials(author.name || "CEAPS");
+  return `<span class="avatar">${escapeHtml(initials)}</span>`;
+}
+
+function createInitials(name) {
+  return name
+    .split(/\s+/)
+    .filter(Boolean)
+    .slice(0, 2)
+    .map((part) => part[0])
+    .join("")
+    .toUpperCase();
 }
 
 function latestAuthorDate(authorId) {

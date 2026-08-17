@@ -3,6 +3,7 @@ import {
   createElement,
   createListItem,
   formatDate,
+  getAuthorProfile,
   getItems,
   getItemUrl,
   getTypeLabel,
@@ -10,7 +11,7 @@ import {
   renderHeader,
   renderTags,
   setupMobileMenu,
-} from "./data.js";
+} from "./data.js?v=20260817-autores";
 
 const state = {
   columnFilter: "todas",
@@ -213,21 +214,20 @@ function renderColumnists(data) {
 
 function getColumnists(data) {
   const people = new Map();
-  const members = data.teamPage?.members || [];
 
   getItems(data, { type: "opinion" }).forEach((item) => {
     if (!item.author?.name) return;
 
     const id = item.author.id || slugify(item.author.name);
-    const member = members.find((person) => person.authorId === id || slugify(person.name) === id);
+    const profile = getAuthorProfile(data, item.author);
 
     if (!people.has(id)) {
       people.set(id, {
         id,
-        name: member?.name || item.author.name,
-        role: item.author.role || member?.role || "Columnista CEAPS",
-        initials: item.author.initials || createInitials(item.author.name),
-        image: item.author.image || "",
+        name: profile?.name || item.author.name,
+        role: profile?.role || item.author.role || "Columnista CEAPS",
+        initials: profile?.initials || item.author.initials || createInitials(item.author.name),
+        image: profile?.image || item.author.image || "",
         count: 0,
         latestTitle: "",
         latestDate: "",
