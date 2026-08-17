@@ -11,7 +11,7 @@ import {
   renderHeader,
   renderTags,
   setupMobileMenu,
-} from "./data.js?v=20260817-autores";
+} from "./data.js?v=20260817-recientes";
 
 const state = {
   columnFilter: "todas",
@@ -90,16 +90,20 @@ function renderLatest(data) {
 
   const target = document.querySelector("[data-latest-grid]");
   target.replaceChildren();
-  const items = getItems(data).slice(0, 6);
+  target.scrollLeft = 0;
+  const items = getItems(data).slice(0, 12);
 
   if (items.length === 0) {
     target.append(createEmptyState("Publicaciones próximamente", "Aquí aparecerán las nuevas columnas, noticias, eventos y convocatorias de CEAPS."));
+    setupCarousel(document.querySelector("[data-latest-carousel]"));
     return;
   }
 
   items.forEach((item) => {
     target.append(createCard(item, data));
   });
+
+  setupCarousel(document.querySelector("[data-latest-carousel]"));
 }
 
 function renderNewsletter(data) {

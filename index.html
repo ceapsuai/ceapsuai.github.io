@@ -43,7 +43,7 @@
         }
       }
     </script>
-    <script type="module" src="assets/js/app.js?v=20260817-autores"></script>
+    <script type="module" src="assets/js/app.js?v=20260817-recientes"></script>
   </head>
   <body>
     <a class="skip-link" href="#contenido">Saltar al contenido</a>
@@ -98,37 +98,12 @@
           <h2 data-latest-title>Lecturas recientes</h2>
           <p data-latest-description>Columnas, noticias, investigación, boletines y convocatorias publicados por el club.</p>
         </div>
-        <div class="shell card-grid latest-grid" data-latest-grid>
-          <a class="content-card" href="/publicaciones/estudiantes-uai-crean-club-ceaps.html" aria-label="Leer Estudiantes UAI crean club para promover el análisis y debate sobre economía, política y sociedad">
-            <div class="card-meta">
-              <span>Noticia</span>
-              <span>19 jun 2026</span>
-            </div>
-            <h3>Estudiantes UAI crean club para promover el análisis y debate sobre economía, política y sociedad</h3>
-            <p>La Escuela de Gobierno UAI destacó la creación de CEAPS, iniciativa impulsada por estudiantes del Magíster en Economía y Políticas Públicas para abrir espacios de análisis, conversación y participación universitaria.</p>
-            <div class="tag-row">
-              <span>CEAPS</span>
-              <span>Escuela de Gobierno</span>
-              <span>Vida universitaria</span>
-            </div>
-          </a>
-          <a class="content-card opinion-card" href="/publicaciones/esta-muriendo-la-universidad.html" aria-label="Leer ¿Está muriendo la Universidad?">
-            <div class="card-meta">
-              <span>Columna</span>
-              <span>23 may 2026</span>
-            </div>
-            <h3>¿Está muriendo la Universidad?</h3>
-            <p>Una reflexión sobre cómo la tecnología, la sobreabundancia de información y el desinterés en la sala de clases tensionan el sentido de la universidad.</p>
-            <div class="author-line">
-              <span class="avatar">MC</span>
-              <span>Martín Castillo Jiménez</span>
-            </div>
-            <div class="tag-row">
-              <span>Universidad</span>
-              <span>Educación superior</span>
-              <span>Tecnología</span>
-            </div>
-          </a>
+        <div class="shell content-carousel" data-latest-carousel>
+          <div class="carousel-controls" aria-label="Navegar por las lecturas recientes">
+            <button class="carousel-button" type="button" aria-label="Ver publicaciones más recientes" data-carousel-previous>←</button>
+            <button class="carousel-button" type="button" aria-label="Ver publicaciones anteriores" data-carousel-next>→</button>
+          </div>
+          <div class="carousel-track latest-grid" data-latest-grid tabindex="0" aria-label="Lecturas recientes"></div>
         </div>
       </section>
 
