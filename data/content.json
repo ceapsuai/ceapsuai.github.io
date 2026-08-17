@@ -293,7 +293,17 @@
       "name": "Martín Castillo Jiménez",
       "role": "Presidente y cofundador de CEAPS",
       "image": "assets/img/equipo/presidente.jpeg",
-      "bio": "Estudiante de Ingeniería Comercial y del Magíster en Economía y Políticas Públicas de la Universidad Adolfo Ibáñez. Sus intereses se concentran en economía política, políticas públicas, relaciones internacionales y Asia-Pacífico."
+      "bio": "Estudiante de Ingeniería Comercial y del Magíster en Economía y Políticas Públicas de la Universidad Adolfo Ibáñez. Sus intereses se concentran en economía política, políticas públicas, relaciones internacionales y Asia-Pacífico.",
+      "links": [
+        {
+          "label": "LinkedIn",
+          "href": "https://www.linkedin.com/in/martincastilloj/"
+        },
+        {
+          "label": "Sitio web",
+          "href": "https://martincastilloj.github.io/"
+        }
+      ]
     }
   ],
   "items": [
