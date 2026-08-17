@@ -296,6 +296,10 @@
       "bio": "Profesor de la Facultad de Artes Liberales de la Universidad Adolfo Ibáñez. Su trabajo se desarrolla en filosofía política y moral.",
       "links": [
         {
+          "label": "Sitio web UAI",
+          "href": "https://www.uai.cl/profesores/artesliberales/daniel-loewe"
+        },
+        {
           "label": "LinkedIn",
           "href": "https://www.linkedin.com/in/daniel-loewe-5a85408/"
         }
