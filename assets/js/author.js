@@ -6,7 +6,7 @@ import {
   loadSiteData,
   renderHeader,
   setupMobileMenu,
-} from "./data.js?v=20260817-autores";
+} from "./data.js?v=20260817-alvaro";
 
 init();
 
@@ -49,6 +49,7 @@ function renderAuthorPage(data) {
     `${columns.length} ${columns.length === 1 ? "columna publicada" : "columnas publicadas"} en CEAPS.`
   );
   renderAuthorPhoto(profile, authorName);
+  renderAuthorLinks(profile);
 
   const target = document.querySelector("[data-author-grid]");
   target.replaceChildren();
@@ -73,6 +74,24 @@ function renderAuthorPhoto(profile, authorName) {
   const absoluteImage = new URL(profile.image, location.href).href;
   updateMeta('meta[property="og:image"]', "content", absoluteImage);
   updateMeta('meta[name="twitter:image"]', "content", absoluteImage);
+}
+
+function renderAuthorLinks(profile) {
+  const target = document.querySelector("[data-author-links]");
+  const links = profile?.links?.filter((link) => link?.label && link?.href) || [];
+  if (!target) return;
+
+  target.replaceChildren();
+  target.hidden = !links.length;
+
+  links.forEach((link) => {
+    const anchor = createElement("a", "author-profile-link-button", link.label);
+    anchor.href = link.href;
+    anchor.target = "_blank";
+    anchor.rel = "noreferrer";
+    anchor.setAttribute("aria-label", `${link.label} de ${profile.name}`);
+    target.append(anchor);
+  });
 }
 
 function matchesAuthor(item, authorId, member) {

@@ -1548,6 +1548,29 @@ blockquote,
   max-width: 720px;
 }
 
+.author-profile-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 1.25rem;
+}
+
+.author-profile-link-button {
+  border: 1px solid rgba(32, 30, 30, 0.34);
+  color: var(--ink);
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.07em;
+  padding: 0.68rem 0.9rem;
+  text-transform: uppercase;
+}
+
+.author-profile-link-button:hover,
+.author-profile-link-button:focus-visible {
+  background: var(--ink);
+  color: var(--paper);
+}
+
 .author-archive-heading {
   margin-bottom: 1.75rem;
   max-width: 720px;

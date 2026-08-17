@@ -276,7 +276,17 @@
       "name": "Álvaro Muñoz Ferrer",
       "role": "Doctor en Filosofía",
       "image": "assets/img/columnistas/alvaro-munoz-ferrer.png",
-      "bio": "Doctor en Filosofía y columnista de CEAPS. Sus textos abordan el lugar de las humanidades, la filosofía y el conocimiento en la vida pública."
+      "bio": "Doctor en Filosofía y profesor de la Universidad Adolfo Ibáñez en el CORE de ética y en Filosofía de la Economía.",
+      "links": [
+        {
+          "label": "LinkedIn",
+          "href": "https://www.linkedin.com/in/alvaromf/"
+        },
+        {
+          "label": "Instagram",
+          "href": "https://www.instagram.com/alvaro.munoz.f"
+        }
+      ]
     },
     {
       "id": "martin-castillo-jimenez",
