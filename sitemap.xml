@@ -19,6 +19,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://ceapsuai.github.io/autor.html?autor=daniel-loewe</loc>
+    <lastmod>2026-08-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://ceapsuai.github.io/autor.html?autor=martin-castillo-jimenez</loc>
     <lastmod>2026-05-23</lastmod>
     <changefreq>monthly</changefreq>
@@ -27,6 +33,12 @@
   <url>
     <loc>https://ceapsuai.github.io/publicaciones/ciencias-humanas-y-areas-prioritarias.html</loc>
     <lastmod>2026-08-07</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ceapsuai.github.io/publicaciones/tristes-hienas.html</loc>
+    <lastmod>2026-08-04</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>

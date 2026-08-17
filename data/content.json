@@ -289,6 +289,19 @@
       ]
     },
     {
+      "id": "daniel-loewe",
+      "name": "Daniel Loewe",
+      "role": "Profesor de Filosofía Política",
+      "image": "assets/img/columnistas/daniel-loewe.png",
+      "bio": "Profesor de la Facultad de Artes Liberales de la Universidad Adolfo Ibáñez. Su trabajo se desarrolla en filosofía política y moral.",
+      "links": [
+        {
+          "label": "LinkedIn",
+          "href": "https://www.linkedin.com/in/daniel-loewe-5a85408/"
+        }
+      ]
+    },
+    {
       "id": "martin-castillo-jimenez",
       "name": "Martín Castillo Jiménez",
       "role": "Presidente y cofundador de CEAPS",
@@ -350,6 +363,82 @@
         {
           "type": "paragraph",
           "text": "Texto republicado en CEAPS con autorización del autor."
+        }
+      ]
+    },
+    {
+      "id": "tristes-hienas",
+      "type": "opinion",
+      "category": "academica",
+      "title": "Tristes hienas",
+      "summary": "Una reflexión sobre el pesimismo social en Chile, sus condiciones económicas y políticas, y la posibilidad de entenderlo como un estado endémico más que como una epidemia.",
+      "excerpt": "El pesimismo sobre el futuro parece haber percolado en amplios sectores de la sociedad, a la par de frustraciones y traumas sociales.",
+      "date": "2026-08-04",
+      "author": {
+        "id": "daniel-loewe",
+        "name": "Daniel Loewe",
+        "role": "Profesor de Filosofía Política",
+        "initials": "DL"
+      },
+      "source": {
+        "name": "La Segunda",
+        "url": "https://www.linkedin.com/posts/daniel-loewe-5a85408_mi-columna-de-hoy-martes-en-la-segundaque-activity-7490473974565560320-p6EL"
+      },
+      "cta": {
+        "label": "Ver publicación original en LinkedIn",
+        "href": "https://www.linkedin.com/posts/daniel-loewe-5a85408_mi-columna-de-hoy-martes-en-la-segundaque-activity-7490473974565560320-p6EL",
+        "external": true
+      },
+      "tags": [
+        "Opinión pública",
+        "Pesimismo",
+        "Economía",
+        "Sociedad"
+      ],
+      "body": [
+        {
+          "type": "lead",
+          "text": "La Cadem informa sobre un alza sostenida del pesimismo: estamos en la cumbre más alta desde que comenzó a medirse en 2015."
+        },
+        {
+          "type": "paragraph",
+          "text": "El foco son las percepciones de las condiciones económicas (las percepciones sobre delincuencia y situación política también son negativas): para el 43 por ciento empeorarán, para el 34 se mantendrán, y solo para el 21 mejorarán."
+        },
+        {
+          "type": "paragraph",
+          "text": "Ya que en economía las percepciones y así las expectativas son todo, se teme que estas redunden, como una profecía autocumplida, en condiciones económicas peores. También podemos prever estrategias políticas poco atractivas de capitalización de la frustración."
+        },
+        {
+          "type": "paragraph",
+          "text": "Con un crecimiento sostenido desde el 10 por ciento en 2018 al 43 actual, se trataría, se sostiene, de una epidemia de pesimismo. Quizás hay algo de ello."
+        },
+        {
+          "type": "paragraph",
+          "text": "Siguiendo a Malcolm Gladwell en The tipping point, los fenómenos de contagio tipo epidémico se remontan a tres factores: unos pocos individuos que comienzan a diseminarla a gran escala, la pegajosidad del agente (virus, mensaje, conducta, etc.); y las características contextuales que favorecen el contagio."
+        },
+        {
+          "type": "paragraph",
+          "text": "Una economía que no despega, alto desempleo persistente, una política del espectáculo agonal y disfuncional, guerras y actores internacionales erráticos, sume el cambio climático y la IA, amenazas que atemorizan fuertemente a los más jóvenes; todo ello da forma a un contexto propicio para la fermentación y diseminación de percepciones pesimistas sobre el futuro. Y el mensaje de una economía lista para la UTI es un jingle pegajoso que canta en canon la oposición al oponerse a la megareforma, y uno que hasta antes de ayer era una estrofa central del himno del actual gobierno (no siempre se sabe contra quien se trabaja)."
+        },
+        {
+          "type": "paragraph",
+          "text": "Pero la diseminación inicial no se remonta a pocos actores efectivos. El pesimismo parece haber percolado en amplios sectores a la par de frustraciones y traumas sociales: estallido, pandemia, procesos constitucionales fallidos, la consciencia de una nueva criminalidad difícil de erradicar, un exgobierno más testimonial que efectivo, etc."
+        },
+        {
+          "type": "paragraph",
+          "text": "Más que un proceso de diseminación epidémico, el pesimismo sobre el futuro asemeja una situación endémica permanente. Una especie de distimia social. Un estado de ánimo a la baja enquistado en los corazones."
+        },
+        {
+          "type": "paragraph",
+          "text": "Es conocido que un pesimista es un realista bien informado. Hay algo de cierto en ello. El mundo puede ser terrible, y por eso las opiniones del optimista Pangloss de Voltaire son humorísticas. Después de todo sabemos que, si solo esperamos lo suficiente, el agua se evaporará y los vasos estarán más vacíos que llenos."
+        },
+        {
+          "type": "paragraph",
+          "text": "Pero quizás Schopenhauer tiene razón y el pesimismo nos reconcilia con ese lugar terrible llamado mundo, fortificándonos de modo vitalista. Quizás Tristón se ha reconciliado más con el mundo que su incombustible compañero Leoncio el León. Quizás no está todo perdido cuando los jaguares se transforman en tristes hienas."
+        },
+        {
+          "type": "paragraph",
+          "text": "Columna publicada originalmente en La Segunda y republicada en CEAPS con autorización del autor."
         }
       ]
     },
