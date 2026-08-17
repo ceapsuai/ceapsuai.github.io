@@ -49,6 +49,7 @@ function renderAuthorPage(data) {
     `${columns.length} ${columns.length === 1 ? "columna publicada" : "columnas publicadas"} en CEAPS.`
   );
   renderAuthorPhoto(profile, authorName);
+  renderAcademicDetails(profile);
   renderAuthorLinks(profile);
 
   const target = document.querySelector("[data-author-grid]");
@@ -92,6 +93,33 @@ function renderAuthorLinks(profile) {
     anchor.setAttribute("aria-label", `${link.label} de ${profile.name}`);
     target.append(anchor);
   });
+}
+
+function renderAcademicDetails(profile) {
+  const target = document.querySelector("[data-author-academic-details]");
+  if (!target) return;
+
+  const education = profile?.education || [];
+  if (!profile?.academicTitle && !education.length && !profile?.specialization) {
+    target.hidden = true;
+    target.replaceChildren();
+    return;
+  }
+
+  target.replaceChildren();
+  target.hidden = false;
+
+  if (profile.academicTitle) target.append(createElement("h2", "", profile.academicTitle));
+
+  if (education.length) {
+    const list = createElement("ul", "author-education-list");
+    education.forEach((item) => list.append(createElement("li", "", item)));
+    target.append(list);
+  }
+
+  if (profile.specialization) {
+    target.append(createElement("p", "author-specialization", profile.specialization));
+  }
 }
 
 function matchesAuthor(item, authorId, member) {

@@ -1548,6 +1548,37 @@ blockquote,
   max-width: 720px;
 }
 
+.author-academic-details {
+  border-top: 1px solid rgba(32, 30, 30, 0.18);
+  margin-top: 1.5rem;
+  max-width: 760px;
+  padding-top: 1.25rem;
+}
+
+.author-academic-details h2 {
+  font-family: var(--serif);
+  font-size: 1.55rem;
+  line-height: 1.15;
+  margin: 0;
+}
+
+.author-education-list {
+  display: grid;
+  gap: 0.55rem;
+  margin: 1rem 0 0;
+  padding-left: 1.2rem;
+}
+
+.author-education-list li,
+.author-specialization {
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.author-specialization {
+  margin: 1rem 0 0;
+}
+
 .author-profile-links {
   display: flex;
   flex-wrap: wrap;
