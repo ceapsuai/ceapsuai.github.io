@@ -1289,6 +1289,15 @@ blockquote,
   font-weight: 600;
 }
 
+.article-body .article-note {
+  border-top: 1px solid var(--line-dark);
+  color: rgba(32, 30, 30, 0.62);
+  font-size: 0.82rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  padding-top: 1rem;
+}
+
 .article-body blockquote {
   border-left: 4px solid var(--gold);
   color: var(--ink);

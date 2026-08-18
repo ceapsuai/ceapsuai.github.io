@@ -379,6 +379,7 @@
       "type": "opinion",
       "category": "academica",
       "title": "Tristes hienas",
+      "bylineRole": "Facultad de Artes Liberales, Universidad Adolfo Ibáñez",
       "summary": "Una reflexión sobre el pesimismo social en Chile, sus condiciones económicas y políticas, y la posibilidad de entenderlo como un estado endémico más que como una epidemia.",
       "excerpt": "El pesimismo sobre el futuro parece haber percolado en amplios sectores de la sociedad, a la par de frustraciones y traumas sociales.",
       "date": "2026-08-04",
@@ -405,12 +406,8 @@
       ],
       "body": [
         {
-          "type": "lead",
-          "text": "La Cadem informa sobre un alza sostenida del pesimismo: estamos en la cumbre más alta desde que comenzó a medirse en 2015."
-        },
-        {
           "type": "paragraph",
-          "text": "El foco son las percepciones de las condiciones económicas (las percepciones sobre delincuencia y situación política también son negativas): para el 43 por ciento empeorarán, para el 34 se mantendrán, y solo para el 21 mejorarán."
+          "text": "La Cadem informa sobre un alza sostenida del pesimismo: estamos en la cumbre más alta desde que comenzó a medirse en 2015. El foco son las percepciones de las condiciones económicas (las percepciones sobre delincuencia y situación política también son negativas): para el 43 por ciento empeorarán, para el 34 se mantendrán, y solo para el 21 mejorarán."
         },
         {
           "type": "paragraph",
@@ -422,7 +419,18 @@
         },
         {
           "type": "paragraph",
-          "text": "Siguiendo a Malcolm Gladwell en The tipping point, los fenómenos de contagio tipo epidémico se remontan a tres factores: unos pocos individuos que comienzan a diseminarla a gran escala, la pegajosidad del agente (virus, mensaje, conducta, etc.); y las características contextuales que favorecen el contagio."
+          "runs": [
+            {
+              "text": "Siguiendo a Malcolm Gladwell en "
+            },
+            {
+              "text": "The tipping point",
+              "italic": true
+            },
+            {
+              "text": ", los fenómenos de contagio tipo epidémico se remontan a tres factores: unos pocos individuos que comienzan a diseminarla a gran escala, la pegajosidad del agente (virus, mensaje, conducta, etc.); y las características contextuales que favorecen el contagio."
+            }
+          ]
         },
         {
           "type": "paragraph",
@@ -445,7 +453,7 @@
           "text": "Pero quizás Schopenhauer tiene razón y el pesimismo nos reconcilia con ese lugar terrible llamado mundo, fortificándonos de modo vitalista. Quizás Tristón se ha reconciliado más con el mundo que su incombustible compañero Leoncio el León. Quizás no está todo perdido cuando los jaguares se transforman en tristes hienas."
         },
         {
-          "type": "paragraph",
+          "type": "note",
           "text": "Columna publicada originalmente en La Segunda y republicada en CEAPS con autorización del autor."
         }
       ]
