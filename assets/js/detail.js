@@ -13,7 +13,7 @@ import {
   renderHeader,
   renderTags,
   setupMobileMenu,
-} from "./data.js?v=20260817-autores";
+} from "./data.js?v=20260818-columna-normal";
 
 init();
 
@@ -67,7 +67,8 @@ function renderByline(data, item) {
     author.href = getAuthorUrl(profile);
     author.setAttribute("aria-label", `Ver perfil y columnas de ${profile.name}`);
     author.append(createAuthorAvatar(data, profile));
-    const text = createElement("span", "", `${profile.name} · ${profile.role || item.author.role || "Columnista CEAPS"}`);
+    const role = item.bylineRole || profile.role || item.author.role || "Columnista CEAPS";
+    const text = createElement("span", "", `${profile.name} · ${role}`);
     author.append(text);
     target.append(author);
   }

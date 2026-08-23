@@ -413,6 +413,220 @@
       ]
     },
     {
+      "id": "boletin-semanal-10-16-agosto-2026",
+      "type": "newsletter",
+      "category": "boletin",
+      "issue": "Edición N.º 1",
+      "title": "Boletín semanal CEAPS: 10 al 16 de agosto de 2026",
+      "summary": "Seis claves de la semana: la capitalización de Codelco, la reforma de seguridad, la indemnización a todo evento, el estrecho de Ormuz, el terremoto en Colombia y la campaña presidencial brasileña.",
+      "excerpt": "Una lectura ampliada de la primera edición del Boletín CEAPS, con contexto y fuentes para seguir la coyuntura nacional e internacional.",
+      "date": "2026-08-17",
+      "image": "assets/img/boletines/boletin-semanal-10-16-agosto-2026-portada.png",
+      "tags": [
+        "Boletín semanal",
+        "Chile",
+        "Internacional",
+        "Economía",
+        "Política"
+      ],
+      "body": [
+        {
+          "type": "lead",
+          "text": "Esta es la versión web ampliada de la primera edición del Boletín Semanal CEAPS. Reúne seis noticias verificadas entre el 10 y el 16 de agosto de 2026, ordenadas en tres temas nacionales y tres internacionales. Las cifras y antecedentes corresponden al cierre editorial del 17 de agosto; cuando una medida seguía en estudio o tramitación, se indica expresamente."
+        },
+        {
+          "type": "heading",
+          "text": "Nacional · 1. Codelco capitaliza el 100% de sus utilidades de 2025"
+        },
+        {
+          "type": "paragraph",
+          "text": "El Gobierno autorizó que Codelco retenga y capitalice la totalidad de su utilidad consolidada de 2025, US$ 2.423 millones, en vez de retirarla como aporte extraordinario al Fisco. La decisión deja recursos dentro de la empresa para respaldar su inversión, su posición financiera y sus proyectos de largo plazo; es una excepción relevante respecto de la práctica histórica de distribuir excedentes al Estado."
+        },
+        {
+          "type": "paragraph",
+          "text": "La cifra requiere una lectura cuidadosa. US$ 2.035 millones —cerca del 84% de la utilidad consolidada— provienen del reconocimiento contable del valor razonable de la participación de Codelco en Nova Andino Litio, la sociedad conjunta con SQM. Descontado ese efecto, el resultado asociado a la operación fue de US$ 388 millones. No significa que la valorización sea irrelevante, pero sí que no equivale por sí sola a caja disponible para gastar. Codelco ya había aportado US$ 1.778 millones al Fisco durante 2025."
+        },
+        {
+          "type": "paragraph",
+          "text": "La clave de política pública está en el intercambio entre ingresos fiscales de corto plazo y capacidad de inversión de una empresa estatal intensiva en capital. La capitalización no estaba contemplada como recurso del Presupuesto 2026, por lo que no implica restar una partida previamente programada; su efecto central es patrimonial y financiero para Codelco."
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "label": "Codelco: resultados consolidados de 2025",
+              "href": "https://www.codelco.com/prensa/2026/codelco-cerro-2025-con-un-ebitda-de-us-6-670-millones-una-utilidad"
+            },
+            {
+              "label": "El País: el debate sobre los US$ 2.400 millones y los recursos de caja",
+              "href": "https://elpais.com/chile/2026-08-12/fue-una-capitalizacion-historica-de-codelco-lo-anunciado-por-el-gobierno-de-kast-el-debate-entre-2400-o-solo-390-millones-de-dolares.html"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Nacional · 2. La reforma de seguridad llega acotada al Congreso"
+        },
+        {
+          "type": "paragraph",
+          "text": "El Ejecutivo ingresó el 17 de agosto una reforma constitucional de seguridad dentro de su agenda contra el crimen organizado y el terrorismo. La iniciativa propone ocho cambios a la Carta Fundamental y requiere un quórum de cuatro séptimos para su aprobación. Entre sus elementos se incluye un nuevo estado de excepción de seguridad pública, que habilitaría el despliegue de las Fuerzas Armadas en zonas afectadas por crimen organizado."
+        },
+        {
+          "type": "paragraph",
+          "text": "La controversia se concentró en un borrador conocido antes del ingreso. Ese texto contemplaba restringir, durante la condena y por 15 años posteriores, prestaciones estatales vinculadas a salud, educación, trabajo y seguridad social para personas condenadas por narcotráfico, terrorismo o crimen organizado. El texto finalmente ingresado no fijó ese plazo en la Constitución y dejó la definición de eventuales restricciones para una ley posterior."
+        },
+        {
+          "type": "paragraph",
+          "text": "La distinción es sustantiva: una norma constitucional define un marco de mayor permanencia y un margen más estrecho para la discusión legislativa; una ley posterior conserva un espacio mayor para precisar alcance, proporcionalidad y compatibilidad con las garantías vigentes. Por eso, el contenido definitivo dependerá tanto de la tramitación parlamentaria como de las normas que eventualmente se propongan después."
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "label": "EFE: anuncio de la reforma constitucional de seguridad",
+              "href": "https://efe.com/mundo/2026-08-06/jose-antonio-kast-anuncia-reforma-seguridad-chile/"
+            },
+            {
+              "label": "El País: el borrador y la controversia por prestaciones estatales",
+              "href": "https://elpais.com/chile/2026-08-16/el-gobierno-de-kast-pretende-retirar-las-prestaciones-de-salud-a-los-condenados-por-crimen-organizado-y-terrorismo.html"
+            },
+            {
+              "label": "El País: cambios anunciados al ingresar la propuesta",
+              "href": "https://elpais.com/chile/2026-08-17/kast-descarta-que-su-gobierno-quiera-suspender-las-prestaciones-de-salud-a-los-condenados-por-crimen-organizado-o-terrorismo.html"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Nacional · 3. Indemnización a todo evento: una propuesta aún en estudio"
+        },
+        {
+          "type": "paragraph",
+          "text": "El ministro del Trabajo, Tomás Rau, explicó que el Gobierno evalúa reemplazar la indemnización por años de servicio por un mecanismo de indemnización a todo evento. El diseño considerado contempla una cotización mensual de cargo del empleador, estimada en torno a 1,8%, destinada a una cuenta individual que el trabajador podría utilizar al término de la relación laboral, incluso en caso de renuncia."
+        },
+        {
+          "type": "paragraph",
+          "text": "El contraste con el esquema vigente es importante. Hoy la indemnización legal se asocia, en general, al despido por necesidades de la empresa y tiene un tope de 11 años; por ello no acompaña muchas salidas voluntarias ni acuerdos mutuos. El modelo en evaluación buscaría dar portabilidad al beneficio, aunque también cambiaría la distribución de costos entre empleador, trabajador y sistema de seguro de cesantía."
+        },
+        {
+          "type": "paragraph",
+          "text": "Al cierre de esta edición no había un proyecto de ley ingresado. Rau planteó que una fórmula posible sería aplicarlo a contratos nuevos, sin retroactividad, precisamente porque modificar derechos asociados a relaciones laborales ya vigentes abre una discusión compleja. La propuesta debe leerse, por tanto, como una línea de diseño en evaluación y no como una reforma aprobada."
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "label": "BioBioChile: declaración del ministro y elementos del mecanismo en evaluación",
+              "href": "https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/06/18/ministro-del-trabajo-confirma-que-gobierno-evalua-que-exista-indemnizacion-laboral-a-todo-evento.shtml"
+            },
+            {
+              "label": "Emol: debate técnico sobre empleo e indemnización por años de servicio",
+              "href": "https://www.emol.com/noticias/Economia/2026/06/02/1201602/desempleo-recetas-para-superar-crisis.html"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Internacional · 4. Ormuz sigue sin acuerdo y se recorta la oferta mundial de crudo"
+        },
+        {
+          "type": "paragraph",
+          "text": "La falta de un acuerdo para reabrir con normalidad el estrecho de Ormuz mantuvo la presión sobre el mercado petrolero. Por esa ruta transita cerca de una quinta parte del petróleo mundial, de modo que una interrupción prolongada afecta tanto los flujos físicos como las expectativas de precio. La Agencia Internacional de Energía (AIE) redujo su proyección de oferta mundial para 2026 a alrededor de 102 millones de barriles diarios."
+        },
+        {
+          "type": "paragraph",
+          "text": "El boletín registró dos señales de estrechez: inventarios observados por debajo de 7.900 millones de barriles —el menor nivel desde abril de 2025— y exportaciones del golfo Pérsico de 15 millones de barriles diarios en julio, 2,1 millones menos que en junio. La AIE estimó una rebaja de 4,3 millones de barriles diarios en la previsión de oferta para 2026."
+        },
+        {
+          "type": "paragraph",
+          "text": "Para Chile, importador neto de combustibles, el canal de transmisión más inmediato es el precio interno. Las proyecciones citadas en el boletín anticipaban alzas de entre $30 y $37 por litro desde el 20 de agosto. Más allá de la cifra puntual, el episodio muestra cómo una disrupción geopolítica lejana puede trasladarse a costos de transporte, inflación y presupuesto de los hogares."
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "label": "AIE: lanzamiento del Oil Market Report de agosto de 2026",
+              "href": "https://www.iea.org/events/oil-market-report-august-2026"
+            },
+            {
+              "label": "AIE: Oil Market Report de julio de 2026",
+              "href": "https://www.iea.org/reports/oil-market-report-july-2026"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Internacional · 5. Terremoto en Colombia: balance humano y reconstrucción"
+        },
+        {
+          "type": "paragraph",
+          "text": "El terremoto de magnitud 7,4 del 10 de agosto, con epicentro en San José del Palmar, en el departamento de Chocó, afectó a catorce departamentos del centro y occidente de Colombia. Al cierre editorial, la Unidad Nacional para la Gestión del Riesgo de Desastres reportaba 294 personas fallecidas y más de 3.900 heridas; otros recuentos periodísticos informaban una cifra algo menor. Esa diferencia no es una contradicción inusual en una emergencia: los balances se actualizan a medida que avanza la búsqueda y la validación de registros."
+        },
+        {
+          "type": "paragraph",
+          "text": "El daño material amplifica el desafío. El boletín consignó 27.000 viviendas colapsadas y una estimación de al menos US$ 3.200 millones para la reconstrucción de Cali. El Gobierno declaró desastre nacional y emergencia económica, herramientas que permiten movilizar recursos y dictar medidas excepcionales para enfrentar la crisis."
+        },
+        {
+          "type": "paragraph",
+          "text": "La reconstrucción también abrió un flanco externo: el presidente Abelardo de la Espriella pidió a Estados Unidos suspender el arancel de 12,5% aplicado a productos colombianos desde julio. El caso combina, así, gestión de riesgo, financiamiento subnacional, actividad económica y política comercial en un mismo proceso de recuperación."
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "label": "El País: cobertura del terremoto y primeros planes de reconstrucción",
+              "href": "https://elpais.com/america-colombia/2026-08-13/ultima-hora-del-terremoto-en-colombia-en-directo.html"
+            },
+            {
+              "label": "El País: actualización del balance de víctimas y heridos",
+              "href": "https://elpais.com/america-colombia/2026-08-14/ultima-hora-del-terremoto-en-colombia-en-directo.html"
+            },
+            {
+              "label": "El País: solicitud de suspensión temporal de aranceles durante la recuperación",
+              "href": "https://elpais.com/america-colombia/2026-08-16/abelardo-de-la-espriella-le-pide-a-donald-trump-que-suspenda-aranceles-a-colombia-por-los-impactos-del-terremoto.html"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Internacional · 6. Brasil abre campaña con Lula y Flávio Bolsonaro en empate técnico"
+        },
+        {
+          "type": "paragraph",
+          "text": "Luiz Inácio Lula da Silva y el senador Flávio Bolsonaro iniciaron el 16 de agosto sus campañas presidenciales en sus respectivos bastiones: São Bernardo do Campo y Copacabana. La elección tendrá primera vuelta el 4 de octubre y una eventual segunda vuelta el 25 de octubre. Jair Bolsonaro no participa de la contienda por estar inhabilitado y condenado, de modo que su hijo se convirtió en la principal carta de la derecha."
+        },
+        {
+          "type": "paragraph",
+          "text": "La encuesta Genial/Quaest citada en el boletín mostraba a Lula en ventaja en primera vuelta, 38% frente a 31%, y un escenario de segunda vuelta dentro del margen de error, 43% frente a 40%. El dato más reciente disponible al cierre mantenía la idea central: existe liderazgo de Lula, pero la distancia frente a Flávio es estrecha para una elección tan polarizada."
+        },
+        {
+          "type": "paragraph",
+          "text": "El proceso interesa a Chile por tres vías. Brasil es un socio comercial y político central en América del Sur; su orientación económica y exterior incide en los espacios de integración regional; y la campaña vuelve a poner en primer plano la relación entre polarización, instituciones y competencia electoral en la mayor economía latinoamericana."
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "label": "Associated Press: inicio de campaña de Lula y Flávio Bolsonaro",
+              "href": "https://apnews.com/article/8f4ad67b107cb05736f450f67198b190"
+            },
+            {
+              "label": "Band: resultados de la encuesta Genial/Quaest de agosto",
+              "href": "https://www.band.com.br/politica/eleicoes/2026/genialquaest-vantagem-de-lula-sobre-flavio-cai-para-9-pontos-no-1-turno-202608050713"
+            },
+            {
+              "label": "El País: claves del inicio de la campaña brasileña",
+              "href": "https://elpais.com/expres/2026-08-17/brasil-entra-en-campana-electoral-claves-del-pulso-lula-bolsonaro.html"
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "text": "Edición N.º 1 · Semana del 10 al 16 de agosto de 2026 · Cierre editorial: 17 de agosto de 2026. Esta página amplía el boletín gráfico publicado por CEAPS y enlaza las fuentes consultadas para facilitar su revisión."
+        }
+      ]
+    },
+    {
       "id": "ciencias-humanas-y-areas-prioritarias",
       "type": "opinion",
       "category": "academica",
@@ -463,6 +677,7 @@
       "type": "opinion",
       "category": "academica",
       "title": "Tristes hienas",
+      "bylineRole": "Facultad de Artes Liberales, Universidad Adolfo Ibáñez",
       "summary": "Una reflexión sobre el pesimismo social en Chile, sus condiciones económicas y políticas, y la posibilidad de entenderlo como un estado endémico más que como una epidemia.",
       "excerpt": "El pesimismo sobre el futuro parece haber percolado en amplios sectores de la sociedad, a la par de frustraciones y traumas sociales.",
       "date": "2026-08-04",
@@ -489,12 +704,8 @@
       ],
       "body": [
         {
-          "type": "lead",
-          "text": "La Cadem informa sobre un alza sostenida del pesimismo: estamos en la cumbre más alta desde que comenzó a medirse en 2015."
-        },
-        {
           "type": "paragraph",
-          "text": "El foco son las percepciones de las condiciones económicas (las percepciones sobre delincuencia y situación política también son negativas): para el 43 por ciento empeorarán, para el 34 se mantendrán, y solo para el 21 mejorarán."
+          "text": "La Cadem informa sobre un alza sostenida del pesimismo: estamos en la cumbre más alta desde que comenzó a medirse en 2015. El foco son las percepciones de las condiciones económicas (las percepciones sobre delincuencia y situación política también son negativas): para el 43 por ciento empeorarán, para el 34 se mantendrán, y solo para el 21 mejorarán."
         },
         {
           "type": "paragraph",
@@ -506,7 +717,18 @@
         },
         {
           "type": "paragraph",
-          "text": "Siguiendo a Malcolm Gladwell en The tipping point, los fenómenos de contagio tipo epidémico se remontan a tres factores: unos pocos individuos que comienzan a diseminarla a gran escala, la pegajosidad del agente (virus, mensaje, conducta, etc.); y las características contextuales que favorecen el contagio."
+          "runs": [
+            {
+              "text": "Siguiendo a Malcolm Gladwell en "
+            },
+            {
+              "text": "The tipping point",
+              "italic": true
+            },
+            {
+              "text": ", los fenómenos de contagio tipo epidémico se remontan a tres factores: unos pocos individuos que comienzan a diseminarla a gran escala, la pegajosidad del agente (virus, mensaje, conducta, etc.); y las características contextuales que favorecen el contagio."
+            }
+          ]
         },
         {
           "type": "paragraph",
@@ -529,7 +751,7 @@
           "text": "Pero quizás Schopenhauer tiene razón y el pesimismo nos reconcilia con ese lugar terrible llamado mundo, fortificándonos de modo vitalista. Quizás Tristón se ha reconciliado más con el mundo que su incombustible compañero Leoncio el León. Quizás no está todo perdido cuando los jaguares se transforman en tristes hienas."
         },
         {
-          "type": "paragraph",
+          "type": "note",
           "text": "Columna publicada originalmente en La Segunda y republicada en CEAPS con autorización del autor."
         }
       ]

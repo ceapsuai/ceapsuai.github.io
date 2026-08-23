@@ -207,7 +207,9 @@ export function renderBodyBlocks(container, blocks = []) {
 
   blocks.forEach((block) => {
     if (block.type === "lead") {
-      container.append(createElement("p", "article-lead", block.text));
+      const lead = createElement("p", "article-lead");
+      appendInlineContent(lead, block);
+      container.append(lead);
       return;
     }
 
@@ -217,8 +219,16 @@ export function renderBodyBlocks(container, blocks = []) {
     }
 
     if (block.type === "quote") {
-      const quote = createElement("blockquote", "", block.text);
+      const quote = createElement("blockquote", "");
+      appendInlineContent(quote, block);
       container.append(quote);
+      return;
+    }
+
+    if (block.type === "note") {
+      const note = createElement("p", "article-note");
+      appendInlineContent(note, block);
+      container.append(note);
       return;
     }
 
@@ -258,7 +268,34 @@ export function renderBodyBlocks(container, blocks = []) {
       return;
     }
 
-    container.append(createElement("p", "", block.text));
+    const paragraph = createElement("p", "");
+    appendInlineContent(paragraph, block);
+    container.append(paragraph);
+  });
+}
+
+function appendInlineContent(element, block = {}) {
+  if (!Array.isArray(block.runs)) {
+    element.textContent = block.text || "";
+    return;
+  }
+
+  block.runs.forEach((run) => {
+    let node = document.createTextNode(run.text || "");
+
+    if (run.italic) {
+      const emphasis = document.createElement("em");
+      emphasis.append(node);
+      node = emphasis;
+    }
+
+    if (run.bold) {
+      const strong = document.createElement("strong");
+      strong.append(node);
+      node = strong;
+    }
+
+    element.append(node);
   });
 }
 

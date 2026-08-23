@@ -7,7 +7,7 @@ const ROOT = process.cwd();
 const CONTENT_PATH = path.join(ROOT, "data", "content.json");
 const OUTPUT_DIR = path.join(ROOT, "publicaciones");
 const SITEMAP_PATH = path.join(ROOT, "sitemap.xml");
-const CSS_VERSION = "20260817-autores";
+const CSS_VERSION = "20260818-columna-normal";
 const MENU_VERSION = "20260704-eventos";
 
 const data = JSON.parse(await readFile(CONTENT_PATH, "utf8"));
@@ -208,7 +208,8 @@ function renderByline(item) {
 
   if (item.author?.name) {
     const profile = getAuthorProfile(item.author);
-    const role = profile.role ? ` · ${profile.role}` : "";
+    const authorRole = item.bylineRole || profile.role || item.author.role;
+    const role = authorRole ? ` · ${authorRole}` : "";
     const href = profile.id ? `/autor.html?autor=${encodeURIComponent(profile.id)}` : "";
     const content = `${renderAuthorAvatar(profile)}<span>${escapeHtml(profile.name + role)}</span>`;
     parts.push(
@@ -263,9 +264,10 @@ function renderSidebar(item) {
 function renderBodyBlocks(blocks = []) {
   return blocks
     .map((block) => {
-      if (block.type === "lead") return `<p class="article-lead">${escapeHtml(block.text)}</p>`;
+      if (block.type === "lead") return `<p class="article-lead">${renderInlineContent(block)}</p>`;
       if (block.type === "heading") return `<h2>${escapeHtml(block.text)}</h2>`;
-      if (block.type === "quote") return `<blockquote>${escapeHtml(block.text)}</blockquote>`;
+      if (block.type === "quote") return `<blockquote>${renderInlineContent(block)}</blockquote>`;
+      if (block.type === "note") return `<p class="article-note">${renderInlineContent(block)}</p>`;
       if (block.type === "list") {
         const items = (block.items || []).map((item) => `<li>${escapeHtml(item)}</li>`).join("");
         return `<ul>${items}</ul>`;
@@ -281,9 +283,22 @@ function renderBodyBlocks(blocks = []) {
           .join("");
         return `<div class="article-link-list">${links}</div>`;
       }
-      return `<p>${escapeHtml(block.text || "")}</p>`;
+      return `<p>${renderInlineContent(block)}</p>`;
     })
     .join("\n            ");
+}
+
+function renderInlineContent(block = {}) {
+  if (!Array.isArray(block.runs)) return escapeHtml(block.text || "");
+
+  return block.runs
+    .map((run) => {
+      let content = escapeHtml(run.text || "");
+      if (run.italic) content = `<em>${content}</em>`;
+      if (run.bold) content = `<strong>${content}</strong>`;
+      return content;
+    })
+    .join("");
 }
 
 function renderArticleFigure(block = {}) {
