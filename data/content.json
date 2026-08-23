@@ -325,9 +325,93 @@
           "href": "https://martincastilloj.github.io/"
         }
       ]
+    },
+    {
+      "id": "maria-jose-naudon",
+      "name": "María José Naudon",
+      "role": "Decana de la Escuela de Gobierno UAI",
+      "image": "assets/img/columnistas/maria-jose-naudon.jpg",
+      "bio": "Profesora de la Universidad Adolfo Ibáñez y decana de la Escuela de Gobierno UAI. Su trabajo académico y público se vincula con las instituciones, la democracia, la literatura y la discusión política contemporánea.",
+      "education": [
+        "Magíster en Artes Liberales, Universidad de Navarra, España, 2006.",
+        "Licenciada en Ciencias Jurídicas, Pontificia Universidad Católica de Chile. Abogada."
+      ],
+      "links": [
+        {
+          "label": "Perfil UAI",
+          "href": "https://www.uai.cl/profesores/gobierno/maria-jose-naudon"
+        }
+      ]
     }
   ],
   "items": [
+    {
+      "id": "autocritica",
+      "type": "opinion",
+      "category": "academica",
+      "title": "Autocrítica",
+      "summary": "Una reflexión sobre el aprendizaje político, la revisión de las propias ideas y la necesidad de convertir la autocrítica en una revisión colectiva.",
+      "excerpt": "El aprendizaje político no se demuestra en lo que se declara después de un revés, sino en lo que se hace cuando el mismo error vuelve a tentar.",
+      "date": "2026-08-14",
+      "author": {
+        "id": "maria-jose-naudon",
+        "name": "María José Naudon",
+        "role": "Decana de la Escuela de Gobierno UAI",
+        "initials": "MN"
+      },
+      "source": {
+        "name": "Universidad Adolfo Ibáñez",
+        "url": "https://www.uai.cl/columnas/gobierno/autocritica"
+      },
+      "cta": {
+        "label": "Leer publicación original en UAI",
+        "href": "https://www.uai.cl/columnas/gobierno/autocritica",
+        "external": true
+      },
+      "tags": [
+        "Política",
+        "Democracia",
+        "Instituciones"
+      ],
+      "body": [
+        {
+          "type": "lead",
+          "text": "El aprendizaje político no se demuestra en lo que se declara después de un revés, sino en lo que se hace cuando el mismo error vuelve a tentar, ahora bajo la apariencia de una nueva oportunidad."
+        },
+        {
+          "type": "paragraph",
+          "text": "Autocrítica es una palabra precisa. Es la capacidad de someter las propias ideas y decisiones al contraste de la experiencia: reconocer aciertos, errores, límites y usar ese juicio para corregir el rumbo. Eso fue, en buena medida, lo que hizo Gabriel Boric en la presentación de La Resaca, de Eugenio Tironi. Volvió sobre posiciones que marcaron su trayectoria y gobierno: los retiros previsionales, las acusaciones constitucionales, la seguridad, la conformación inicial del gabinete, la relación con el proceso constitucional y las examinó desde una perspectiva distinta de la que sostuvo en su momento."
+        },
+        {
+          "type": "paragraph",
+          "text": "Ese ejercicio tiene valor. No porque una autocrítica borre las consecuencias de las decisiones adoptadas, ni porque transforme retrospectivamente su sentido, sino porque revela la disposición a revisar las propias convicciones y adhesiones a la luz de lo aprendido. Al escucharlo, se advertía que no todo pasaba por una elaboración racional: persistían convicciones, lealtades y afectos que seguían gravitando. Esa tensión no desmerece la autocrítica; quizá la vuelve más interesante, porque muestra hasta qué punto aprender políticamente no consiste simplemente en sustituir unas ideas por otras."
+        },
+        {
+          "type": "paragraph",
+          "text": "Sin embargo, que Boric haya revisado su propia trayectoria no significa que su sector haya realizado el mismo recorrido. Un presidente puede aprender gobernando sin que los suyos lo hagan con la misma profundidad. Por eso, la pregunta de fondo es hasta dónde alcanza el ejercicio y de qué manera se traduce en una revisión colectiva."
+        },
+        {
+          "type": "paragraph",
+          "text": "El documento final del Primer Congreso Ideológico y Estratégico del Frente Amplio ofrece algunas pistas. Hay en él una elaboración racional del aprendizaje: se reconocen errores y estrecheces, la necesidad de construir mayorías más amplias, de conectar con problemas concretos y de superar un perfil excesivamente urbano, profesional y universitario. Pero junto con ello permanecen varias de las categorías con las que el sector interpretó originalmente el ciclo político: disputa hegemónica, transformación estructural, superación del neoliberalismo entre otras."
+        },
+        {
+          "type": "paragraph",
+          "text": "Esa coexistencia obliga a distinguir dos niveles de aprendizaje. Uno estratégico o instrumental, referido a las condiciones y los medios para llevar adelante el proyecto. Otro sustantivo, que exige revisar las premisas desde las cuales se interpretaron octubre y la sociedad chilena. Si el problema fue solo estratégico, la conclusión es que al proyecto le faltaron mejores condiciones. Si alcanzó también al diagnóstico, entonces corresponde revisar las ideas que lo sostuvieron. El congreso se mueve con soltura en el primer nivel; el segundo, en cambio, apenas lo roza."
+        },
+        {
+          "type": "paragraph",
+          "text": "Y ahí reside la verdadera prueba. El aprendizaje político no se demuestra en lo que se declara después de un revés, sino en lo que se hace cuando el mismo error vuelve a tentar, ahora bajo la apariencia de una nueva oportunidad."
+        },
+        {
+          "type": "paragraph",
+          "text": "La autocrítica de Boric es valiosa, pero las preguntas decisivas son otras: cuánto aprendió realmente el Frente Amplio y qué influencia ejercerá Boric, como líder del sector, para convertirlo en una revisión colectiva."
+        },
+        {
+          "type": "paragraph",
+          "text": "Publicada originalmente en la Universidad Adolfo Ibáñez."
+        }
+      ]
+    },
     {
       "id": "ciencias-humanas-y-areas-prioritarias",
       "type": "opinion",
