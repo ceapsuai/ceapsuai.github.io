@@ -328,6 +328,114 @@
       ]
     },
     {
+      "id": "boletin-semanal-17-23-agosto-2026",
+      "type": "newsletter",
+      "category": "boletin",
+      "issue": "Edición N.º 2",
+      "title": "Boletín semanal CEAPS: 17 al 23 de agosto de 2026",
+      "summary": "Cinco claves de la semana: el PIB chileno, la reforma de seguridad, la ruptura comercial entre Emiratos Árabes Unidos e Irán, los aranceles entre Estados Unidos y Canadá y la condena al fundador de Evergrande.",
+      "excerpt": "Una lectura ampliada de la segunda edición del Boletín CEAPS, con contexto, cifras y fuentes para seguir la coyuntura nacional e internacional.",
+      "date": "2026-08-24",
+      "image": "assets/img/boletines/boletin-semanal-17-23-agosto-2026-portada.png",
+      "tags": [
+        "Boletín semanal",
+        "Chile",
+        "Internacional",
+        "Economía",
+        "Política"
+      ],
+      "body": [
+        {
+          "type": "lead",
+          "text": "Esta es la versión web ampliada de la segunda edición del Boletín Semanal CEAPS. Reúne cinco noticias verificadas entre el 17 y el 23 de agosto de 2026, con dos temas nacionales y tres internacionales. Las cifras y antecedentes corresponden al cierre editorial del 23 de agosto."
+        },
+        {
+          "type": "heading",
+          "text": "Nacional · 1. Chile completa un semestre con el PIB en terreno negativo"
+        },
+        {
+          "type": "paragraph",
+          "text": "El PIB de Chile cayó 0,2 % interanual en el segundo trimestre de 2026, tras una variación de −0,3 % en el primero. La caída se explica principalmente por la minería, que retrocedió 6,4 %, mientras el PIB no minero creció 0,7 %, con servicios y comercio al alza."
+        },
+        {
+          "type": "paragraph",
+          "text": "La comparación trimestral desestacionalizada no mostró variación respecto del período anterior. Por eso, el dato no configura por sí solo una recesión técnica: ese concepto exige dos caídas trimestrales consecutivas en la serie ajustada por variaciones estacionales. La formación bruta de capital fijo tampoco presentó cambios durante el trimestre."
+        },
+        {
+          "type": "paragraph",
+          "text": "Fuentes: Banco Central de Chile; Reuters y El País Chile (18 de agosto de 2026)."
+        },
+        {
+          "type": "heading",
+          "text": "Nacional · 2. La reforma de seguridad propone crear un nuevo estado de excepción"
+        },
+        {
+          "type": "paragraph",
+          "text": "El Gobierno ingresó al Senado una reforma de seguridad de ocho puntos. El proyecto propone crear un estado de excepción que el Presidente podría declarar por 120 días y prorrogar una vez sin autorización del Congreso; solo las prórrogas posteriores requerirían esa aprobación."
+        },
+        {
+          "type": "paragraph",
+          "text": "El mecanismo podría restringir las libertades de movimiento, reunión y asociación, además de contemplar la interceptación de comunicaciones. El plazo total inicial podría alcanzar 240 días sin autorización parlamentaria. La propuesta recién ingresó a tramitación y todavía no forma parte de la Constitución."
+        },
+        {
+          "type": "paragraph",
+          "text": "Fuentes: Senado de Chile, Boletín 18.597-07; CNN Chile y El País Chile (18 de agosto de 2026)."
+        },
+        {
+          "type": "heading",
+          "text": "Internacional · 3. Emiratos Árabes Unidos suspende todo comercio con Irán"
+        },
+        {
+          "type": "paragraph",
+          "text": "Emiratos Árabes Unidos suspendió el 19 de agosto todo comercio y transacción financiera con Irán, tras afirmar que misiles iraníes habían sido lanzados hacia su territorio. Teherán negó esos lanzamientos y Estados Unidos anunció en paralelo una mayor presión económica sobre Irán."
+        },
+        {
+          "type": "paragraph",
+          "text": "La medida afecta un vínculo relevante: antes de la ruptura, Emiratos participaba en más de 30 % de las importaciones iraníes y funcionaba como puerta comercial hacia terceros países. El episodio también reabre la atención sobre el estrecho de Ormuz, por donde transitaba cerca de 20 % del petróleo y gas mundial en tiempos de paz."
+        },
+        {
+          "type": "paragraph",
+          "text": "Fuentes: Cancillería de Emiratos Árabes Unidos; Associated Press y Reuters (19 de agosto de 2026)."
+        },
+        {
+          "type": "heading",
+          "text": "Internacional · 4. EE. UU. y Canadá rompen negociaciones: entran en vigor aranceles de 50 %"
+        },
+        {
+          "type": "paragraph",
+          "text": "Estados Unidos aplicó el 22 de agosto aranceles de 50 % sobre cerca de US$20.000 millones en productos canadienses, tras fracasar las negociaciones. El primer ministro Mark Carney suspendió las conversaciones y anunció aranceles equivalentes desde septiembre."
+        },
+        {
+          "type": "paragraph",
+          "text": "La medida alcanza exportaciones canadienses equivalentes a alrededor de 5 % de sus ventas totales hacia Estados Unidos e incluye productos como lácteos, alcohol, cemento y artículos deportivos. Canadá acusa cambios de última hora, mientras Washington sostiene que Ottawa rechazó un acuerdo. La disputa podría complicar la revisión del tratado comercial con México y Estados Unidos."
+        },
+        {
+          "type": "paragraph",
+          "text": "Fuentes: Oficina del Primer Ministro de Canadá (22 de agosto de 2026); Reuters (22 de agosto de 2026) y Associated Press."
+        },
+        {
+          "type": "heading",
+          "text": "Internacional · 5. China condena a cadena perpetua al fundador de Evergrande"
+        },
+        {
+          "type": "paragraph",
+          "text": "Un tribunal de Shenzhen condenó a cadena perpetua a Hui Ka Yan, fundador de Evergrande, por fraude financiero, captación ilegal de depósitos y soborno, junto con la confiscación de bienes. Otras 56 personas vinculadas al grupo recibieron penas de entre 22 meses y 18 años de prisión."
+        },
+        {
+          "type": "paragraph",
+          "text": "Evergrande fue multada con 8.820 millones de yuanes y su filial inmobiliaria con otros 7.000 millones. La sentencia no resuelve, sin embargo, la liquidación del grupo ni las reclamaciones de acreedores frente a obligaciones acumuladas que superaban los US$300.000 millones antes de su colapso."
+        },
+        {
+          "type": "paragraph",
+          "text": "Fuentes: Tribunal Supremo Popular de China; Associated Press y Reuters (20 de agosto de 2026)."
+        },
+        {
+          "type": "note",
+          "text": "Edición N.º 2 · Semana del 17 al 23 de agosto de 2026 · Cierre editorial: 23 de agosto de 2026, 23:59 CLT. Esta página amplía el boletín gráfico publicado por CEAPS y reúne las fuentes consultadas para facilitar su revisión."
+        }
+      ]
+    },
+    {
       "id": "boletin-semanal-10-16-agosto-2026",
       "type": "newsletter",
       "category": "boletin",
